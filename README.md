@@ -1,6 +1,5 @@
 # user-analysis of the LifeWatch project
 
----
 
 Yearly analysis of the LifeWatch users since the start of the [LifeWatch project](https://lifewatch.be) (2012).
 
@@ -41,8 +40,6 @@ The structure of the repository is as follows:
 
 ## Data
 
----
-
 Open data on LW publications and users of data system, ordered on a yearly folders:
 
 - 2012
@@ -58,8 +55,6 @@ Open data on LW publications and users of data system, ordered on a yearly folde
 
 
 ## Tools
-
----
 
 The tools used in various steps of the user analysis.
 
