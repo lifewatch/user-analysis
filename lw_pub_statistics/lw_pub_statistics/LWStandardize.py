@@ -78,6 +78,7 @@ class Standardizator:
         :type stand_file: str
         """
 
+        ##TODO: FINISH!
         # Standardized information as dataframe:
         self.stand_data = pd.read_excel(stand_file, sheet_name='Affiliations_stand_LongList')
         print('Checking for an exact match between Affiliation names and standardized names from list')

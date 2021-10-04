@@ -18,7 +18,7 @@ def get_arg_parser():
     parser = argparse.ArgumentParser(description='Standardizes (lifewatch) publication data exported from IMIS',
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-pubdata', '--publicationData', required=True, help='Specifies the folder with publication data')
-    parser.add_argument('-refdata', '--referenceData', help='Specifies the file with standardized affiliation names')
+    parser.add_argument('-refdata', '--referenceData', help='Specifies the folder with standardized data')
     parser.add_argument('-wosdata', '--wosExportData', help='Specifies the folder with export data from Web of Science (from publication with a WoS code)')
     parser.add_argument('-out', '--output', help='Specifies the file with updated/standardized publication data')
 
