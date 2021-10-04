@@ -40,23 +40,15 @@ The structure of the repository is as follows:
 
 ## Data
 
-Open data on LW publications and users of data system, ordered on a yearly folders:
-
-- 2012
-- 2013
-- 2014
-- 2015
-- 2016
-- 2017
-- 2018
-- 2019
-- 2020
-- ...
-
+./publication_data/ --> data on the lifewatch publications, exported from IMIS (either as one large export or split per year) 
+./reference_Data/ --> standardized data (e.g. affiliation names, country, quadruple helix terms, institute type names, ... )
+./wos_export/ --> data on lifewatch publications with a WoS code, exported from Web Of Science
 
 ## Tools
 
 The tools used in various steps of the user analysis.
+
+lw_pub_statistics --> to standardize publication data, see ./lw_pub_statistics/README.md on how to use 
 
 
 
