@@ -78,21 +78,19 @@ class Standardizator:
         :type stand_file: str
         """
 
-        ##TODO: FINISH!
         # Standardized information as dataframe:
         self.stand_data = pd.read_excel(stand_file, sheet_name='Affiliations_stand_LongList')
 
         print('Checking for an exact match between Affiliation names and standardized names from list')
         # Find exact matches & add standardized affiliation:
-        print(self.data.columns)
-        if 'stand_affil' not in self.data.columns:
-            #add name of standardized affiliation to data:
-            for index, row in self.stand_data.iterrows():
-                self.data.at[ self.data['Affiliation'] == row['Institute'], ["stand_affil"]] = row['Institute standardized']
-                self.data.at[ self.data['wos_affil'] == row['Institute'], ["stand_affil"]] = row['Institute standardized']
-                #print(row['Institute'], row['Institute standardized'])
+        print(self.stand_data.columns)
+        #add name of standardized affiliation to data:
+        for index, row in self.stand_data.iterrows():
+            self.data.loc[ self.data['Affiliation'] == row['Institute'], ["stand_affil"]] = row['Institute standardized']
+            #self.data.at[ self.data['wos_affil'] == row['Institute'], ["stand_affil"]] = row['Institute standardized']
+            #print(row['Institute'], row['Institute standardized'])
 
-        print(self.data['wos_affil'])
+        print(self.data['wos_affil'], self.data['stand_affil'])
         return self
 
 
