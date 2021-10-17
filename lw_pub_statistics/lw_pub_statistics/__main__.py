@@ -55,10 +55,6 @@ def make_standardized(args: argparse.Namespace):
         df.add_WOSaffil(args.wosExportData)
         df.add_WOScountry(args.wosExportData)
         df.add_WOSpluskeywords(args.wosExportData)
-        df.add_WOScategories(args.wosExportData)
-        df.add_WOSresearcharea(args.wosExportData)
-        df.add_WOScitations(args.wosExportData)
-        df.add_WOSusage(args.wosExportData)
     if args.referenceFile is not None:
         # df.exactMatch(args.referenceFile)
         if args.column is not None:
