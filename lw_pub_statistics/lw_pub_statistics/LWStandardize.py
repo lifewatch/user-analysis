@@ -85,6 +85,52 @@ class Standardizator:
                 os.pardir, 'standardized_data', 'stand_data.csv'))
         return self
 
+    def add_WOSkeywords(self, wos_export: str) -> pd.DataFrame:
+        """
+        Add the country of the affiliation of the first author, exported from Web of Science
+        :param stand_file: folder with wos export files
+        :type stand_file: str
+        """
+
+        # Read data
+        self.export_data = load_folderdata(wos_export, 'wos_export')
+
+        # add wos keywords
+        if 'wos_keywords' not in self.data.columns:
+            for index, row in self.export_data.iterrows():
+                keywords = row['DE']
+                self.data.loc[self.data['WoScode'] == row['UT'],
+                              "wos_keywords"] = keywords
+
+            # update datafile
+            update_datafile(self.data)
+            print("WoS Keywords added to %s" % os.path.join(
+                os.pardir, 'standardized_data', 'stand_data.csv'))
+        return self
+
+    def add_WOSpluskeywords(self, wos_export: str) -> pd.DataFrame:
+        """
+        Add the country of the affiliation of the first author, exported from Web of Science
+        :param stand_file: folder with wos export files
+        :type stand_file: str
+        """
+
+        # Read data
+        self.export_data = load_folderdata(wos_export, 'wos_export')
+
+        # add wos keywords
+        if 'wos_plus_keywords' not in self.data.columns:
+            for index, row in self.export_data.iterrows():
+                pluskeywords = row['ID']
+                self.data.loc[self.data['WoScode'] == row['UT'],
+                              "wos_plus_keywords"] = pluskeywords
+
+            # update datafile
+            update_datafile(self.data)
+            print("WoSPlus Keywords added to %s" % os.path.join(
+                os.pardir, 'standardized_data', 'stand_data.csv'))
+        return self
+
     def exactMatch(self, stand_file: str) -> pd.DataFrame:
         """
         Check for extact matches between 'Affiliation' (from IMIS) and 'Institute' (from Affiliation_Standardized);

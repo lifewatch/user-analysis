@@ -23,7 +23,6 @@ def get_arg_parser():
     parser.add_argument(
         '-pubdata',
         '--publicationData',
-        required=True,
         help='Specifies the folder with publication data')
     parser.add_argument(
         '-reffile',
@@ -38,6 +37,14 @@ def get_arg_parser():
         '--column',
         choices=['Affiliation', 'wos_affil'],
         help='Specifies the column used to match similarity against in the reference data')
+    parser.add_argument(
+        '-standdata',
+        '--standardizedData',
+        help='Specifies the folder with standardized data')
+    parser.add_argument(
+        '-labelfile',
+        '--labelFile',
+        help='Specifies the file with label information')
 
     return parser
 
@@ -47,6 +54,7 @@ def make_standardized(args: argparse.Namespace):
     if args.wosExportData is not None:
         df.add_WOSaffil(args.wosExportData)
         df.add_WOScountry(args.wosExportData)
+        df.add_WOSpluskeywords(args.wosExportData)
     if args.referenceFile is not None:
         # df.exactMatch(args.referenceFile)
         if args.column is not None:
@@ -55,9 +63,11 @@ def make_standardized(args: argparse.Namespace):
     return df
 
 
-"""def add_labels(args: argparse.Namespace):
-    df = Labeller(args)  # to check if works!
-    return df"""
+def make_labelled(args: argparse.Namespace):
+    df = Labeller(args.standardizedData)
+    if args.labelfile is not None:
+        df.add_label(args.labelfile)
+    return df
 
 
 def main():
@@ -65,11 +75,12 @@ def main():
     The main entry point to this module.
     """
     args = get_arg_parser().parse_args()
-    # standardize the data
-    df = make_standardized(args)
-    # standardized_data = make_standardized(args)
-    # add labels to the standardized data
-    """df = add_labels(standardized_data)"""
+
+    if args.publicationData is not None:
+        df = make_standardized(args)
+
+    if args.standardizedData is not None:
+        df = make_labelled(args)
 
     log.debug("df = %s" % df)
 
