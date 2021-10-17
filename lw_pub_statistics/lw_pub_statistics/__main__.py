@@ -52,9 +52,8 @@ def get_arg_parser():
 def make_standardized(args: argparse.Namespace):
     df = Standardizator(args.publicationData)
     if args.wosExportData is not None:
-        df.add_WOSaffil(args.wosExportData)
-        df.add_WOScountry(args.wosExportData)
-        df.add_WOSpluskeywords(args.wosExportData)
+        df.add_wosinfo(args.wosExportData)
+
     if args.referenceFile is not None:
         # df.exactMatch(args.referenceFile)
         if args.column is not None:
