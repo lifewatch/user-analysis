@@ -7,6 +7,7 @@ from pandas._testing import assert_index_equal
 from pandas.api.types import is_string_dtype
 
 from .functions import load_folderdata, load_filedata, best_standmatch, update_datafile
+from .LWWos import *
 
 
 class Standardizator:
@@ -28,107 +29,20 @@ class Standardizator:
         else:
             self.data = load_folderdata(pubfolder, 'publication_data')
 
-    def add_WOSaffil(self, wos_export: str) -> pd.DataFrame:
-        """
-        Add affiliation information of the first author, exported from Web of Science
-        :param stand_file: folder with wos export files
-        :type stand_file: str
-        """
+    def add_wosinfo(self, wos_export: str) -> pd.DataFrame:
+        """ Add information from wos_export """
 
-        self.export_data = load_folderdata(wos_export, 'wos_export')
+        # to fix:
+        test = WOS(self.data, wos_export).add_WOSaffil()
+        test.add_WOScountry()
+        test.add_WOSkeywords()
+        test.add_WOSpluskeywords()
+        test.add_WOScategories()
+        test.add_WOSresearcharea()
+        test.add_WOScitations()
+        test.add_WOSusage()
+        update_datafile(test)
 
-        if 'wos_affil' not in self.data.columns:
-            for index1, row in self.export_data.iterrows():
-                # note: type of nan values in export_data['RP'] is float, which is non iterable
-                if type(row['RP']) == str:
-                    # 1. wos affiliation of first author | 'RP' = first author name & affiliation info ; 'RP_2' = first author affiliation info
-                    affil_firstauth = str(row['RP']).split(
-                        '(corresponding author), ')[-1]
-                    # 2. add wos_affil to data based on wos code | 'UT' = wos code
-                    self.data.loc[self.data['WoScode'] == row['UT'],
-                                  "wos_affil"] = affil_firstauth
-
-            update_datafile(self.data)
-            print("WoS affiliations added to %s" % os.path.join(
-                os.pardir, 'standardized_data', 'stand_data.csv'))
-
-        return self
-
-    def add_WOScountry(self, wos_export: str) -> pd.DataFrame:
-        """
-        Add the country of the affiliation of the first author, exported from Web of Science
-        :param stand_file: folder with wos export files
-        :type stand_file: str
-        """
-
-        # Read data
-        self.export_data = load_folderdata(wos_export, 'wos_export')
-
-        if 'wos_country' not in self.data.columns:
-            # 1. wos affiliation of first author | 'RP' = first author name & affiliation info
-            for index, row in self.export_data.iterrows():
-                # get country name from string & clean up
-                country_firstauth = str(row['RP']).split(
-                    ', ')[-1]
-                country_firstauth = country_firstauth.rstrip(
-                    country_firstauth[-1])
-                if 'USA' in country_firstauth:
-                    country_firstauth = 'USA'
-
-                # 2. add wos_affil to data based on wos code | 'UT' = wos code
-                self.data.loc[self.data['WoScode'] == row['UT'],
-                              "wos_country"] = country_firstauth
-
-            # update datafile
-            update_datafile(self.data)
-            print("Country information added to %s" % os.path.join(
-                os.pardir, 'standardized_data', 'stand_data.csv'))
-        return self
-
-    def add_WOSkeywords(self, wos_export: str) -> pd.DataFrame:
-        """
-        Add the country of the affiliation of the first author, exported from Web of Science
-        :param stand_file: folder with wos export files
-        :type stand_file: str
-        """
-
-        # Read data
-        self.export_data = load_folderdata(wos_export, 'wos_export')
-
-        # add wos keywords
-        if 'wos_keywords' not in self.data.columns:
-            for index, row in self.export_data.iterrows():
-                keywords = row['DE']
-                self.data.loc[self.data['WoScode'] == row['UT'],
-                              "wos_keywords"] = keywords
-
-            # update datafile
-            update_datafile(self.data)
-            print("WoS Keywords added to %s" % os.path.join(
-                os.pardir, 'standardized_data', 'stand_data.csv'))
-        return self
-
-    def add_WOSpluskeywords(self, wos_export: str) -> pd.DataFrame:
-        """
-        Add the country of the affiliation of the first author, exported from Web of Science
-        :param stand_file: folder with wos export files
-        :type stand_file: str
-        """
-
-        # Read data
-        self.export_data = load_folderdata(wos_export, 'wos_export')
-
-        # add wos keywords
-        if 'wos_plus_keywords' not in self.data.columns:
-            for index, row in self.export_data.iterrows():
-                pluskeywords = row['ID']
-                self.data.loc[self.data['WoScode'] == row['UT'],
-                              "wos_plus_keywords"] = pluskeywords
-
-            # update datafile
-            update_datafile(self.data)
-            print("WoSPlus Keywords added to %s" % os.path.join(
-                os.pardir, 'standardized_data', 'stand_data.csv'))
         return self
 
     def exactMatch(self, stand_file: str) -> pd.DataFrame:
