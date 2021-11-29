@@ -1,0 +1,3 @@
+Files in this directory come from the "Elsevier 2021 SDG mapping" on Mendeley Data.
+Official citation with DOI:
+Rivest, Maxime; Kashnitsky, Yury; Bédard-Vallée, Alexandre; Campbell, David; Khayat, Paul; Labrosse, Isabelle; Pinheiro, Henrique; Provençal, Simon; Roberge, Guillaume; James, Chris (2021), “Improving the Scopus and Aurora queries to identify research that supports the United Nations Sustainable Development Goals (SDGs) 2021”, Mendeley Data, V4, doi: 10.17632/9sxdykm8s4.4
