@@ -2,6 +2,8 @@
 
 ***
 
+This folder contains data on the users of LifeWatch data systems:
+
 ## Marine Species
 The users of Marine Species consist of the people/insitutes that:
 1. are using the WoRMS webservices and/or provide deeplinks to WoRMS,

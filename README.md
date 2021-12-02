@@ -1,55 +1,48 @@
-# user-analysis of the LifeWatch project
+# Analysis of the [LifeWatch](https://lifewatch.be) users
+
+LifeWatch users are considered:
+1. The authors of LifeWatch publications,
+2. The users of the LW data systems.
 
 
-Yearly analysis of the LifeWatch users since the start of the [LifeWatch project](https://lifewatch.be) (2012).
+### 1. LifeWatch publications
+The LifeWatch publications constitute a manually curated collection of scientific literature that is linked to the LifeWatch project. 
+The collection consists of 11 LifeWatch special collections, which are subcollections that contain scientific articles (both peer and non-peer reviewed) and monographs (books, rapports, proceedings and abstracts, theses).
 
-LW Users are identified through:
+The LifeWatch special collections are: 
+- EurOBIS ackn
+- EUROBIS ackn – direct,
+- EUROBIS ackn – indirect
+- IRMNG ackn
+- Lifewatch ackn
+- LifeWatch Marine Data Archeology
+- LifeWatch Observatory
+- LifeWatch Species Information Backbone
+- Marine Regions ackn
+- WoRMS ackn
+- WoRMS ackn - direct
+- LifeWatch available through INBO IPT
 
-- authors of LifeWatch publications based on LW data
-- users of the LW data systems (where possible)
+The (non-standardized) publications are available here: [LW_publications](https://github.com/lifewatch/user-analysis/LW_publications/ReadMe.md)
 
-
-### LifeWatch publications
-
-LW publications consist of:
-
-1. scientific articles (both peer and non-peer reviewed) 
-2. monographs (books, rapports, proceedings and abstracts, theses)
-
-
-(In order to be considered a LifeWatch publications, articles are manually analysed and collected in one of 11 LW special collections in IMIS.)
-
-### Data systems
-
-LW data systems taken into account for the user analysis are:
-
+### 2. LifeWatch data systems
+The LifeWatch data systems are the services and products offered by LifeWatch.
+For this user analysis, following LifeWatch data systems were taken into account: 
 - [Marine Regions](https://marineregions.org)
 - [WoRMS](https://marinespecies.org)
 - data requests (via mail)
-
-besides single data systems, users are also identified through:
-
 - mailing lists
 - registered users
 - workshop participants 
 
+The Data on the users of data systems is available here: [LW_data_systems](https://github.com/lifewatch/user-analysis/LW_data_systems/ReadMe.md)
 
 
 
-The structure of the repository is as follows:
+This repository further contains a python module to standardize the information of the LifeWatch publications: [standardize_publications](https://github.com/lifewatch/user-analysis/LW_publications/ReadMe.md)
+This python module makes use of an export of the LifeWatch publications from WebOfScience (here: [wos_export](https://github.com/lifewatch/user-analysis/wos_export/ReadMe.md)) and produces a csv file with the standardized information (here: [LW_publications_standardized](https://github.com/lifewatch/user-analysis/LW_publications_standardized/ReadMe.md)). 
 
-## Data
-
-./publication_data/ --> data on the lifewatch publications, exported from IMIS (either as one large export or split per year) 
-./reference_Data/ --> standardized data (e.g. affiliation names, country, quadruple helix terms, institute type names, ... )
-./wos_export/ --> data on lifewatch publications with a WoS code, exported from Web Of Science
-
-## Tools
-
-The tools used in various steps of the user analysis.
-
-lw_pub_statistics --> to standardize publication data, see ./lw_pub_statistics/README.md on how to use 
-
+And finally, also jupyter notebooks with various user analysis statistics: [jupyter notebooks](https://github.com/lifewatch/user-analysis/notebooks/ReadMe.md).
 
 
 
