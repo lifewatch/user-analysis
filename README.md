@@ -40,7 +40,7 @@ The Data on the users of data systems is available here: [LW_data_systems](https
 
 
 This repository further contains a python module to standardize the information of the LifeWatch publications: [standardize_publications](https://github.com/lifewatch/user-analysis/LW_publications/ReadMe.md)
-This python module makes use of an export of the LifeWatch publications from WebOfScience (here: [wos_export](https://github.com/lifewatch/user-analysis/tree/main/wos_export/ReadMe.md)) and produces a csv file with the standardized information (here: [LW_publications_standardized](https://github.com/lifewatch/user-analysis/tree/main/LW_publications_standardized/ReadMe.md)). 
+This python module makes use of an export of the LifeWatch publications from WebOfScience (here: [wos_export](https://github.com/lifewatch/user-analysis/tree/main/wos_export/ReadMe.md)), a file with standardized reference affiliations (here: [reference_data](https://github.com/lifewatch/user-analysis/tree/main/reference_data/ReadMe.md)) and produces a csv file with the standardized information (here: [LW_publications_standardized](https://github.com/lifewatch/user-analysis/tree/main/LW_publications_standardized/ReadMe.md)). 
 
 And finally, also jupyter notebooks with various user analysis statistics: [jupyter notebooks](https://github.com/lifewatch/user-analysis/tree/main/notebooks/ReadMe.md).
 
