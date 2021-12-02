@@ -23,7 +23,7 @@ The LifeWatch special collections are:
 - WoRMS ackn - direct
 - LifeWatch available through INBO IPT
 
-The (non-standardized) publications are available here: [LW_publications](https://github.com/lifewatch/user-analysis/LW_publications/ReadMe.md)
+The (non-standardized) publications are available here: [LW_publications](https://github.com/lifewatch/user-analysis/tree/main/LW_publications/ReadMe.md)
 
 ### 2. LifeWatch data systems
 The LifeWatch data systems are the services and products offered by LifeWatch.
@@ -35,14 +35,14 @@ For this user analysis, following LifeWatch data systems were taken into account
 - registered users
 - workshop participants 
 
-The Data on the users of data systems is available here: [LW_data_systems](https://github.com/lifewatch/user-analysis/LW_data_systems/ReadMe.md)
+The Data on the users of data systems is available here: [LW_data_systems](https://github.com/lifewatch/user-analysis/tree/main/LW_data_systems/ReadMe.md)
 
 
 
 This repository further contains a python module to standardize the information of the LifeWatch publications: [standardize_publications](https://github.com/lifewatch/user-analysis/LW_publications/ReadMe.md)
-This python module makes use of an export of the LifeWatch publications from WebOfScience (here: [wos_export](https://github.com/lifewatch/user-analysis/wos_export/ReadMe.md)) and produces a csv file with the standardized information (here: [LW_publications_standardized](https://github.com/lifewatch/user-analysis/LW_publications_standardized/ReadMe.md)). 
+This python module makes use of an export of the LifeWatch publications from WebOfScience (here: [wos_export](https://github.com/lifewatch/user-analysis/tree/main/wos_export/ReadMe.md)) and produces a csv file with the standardized information (here: [LW_publications_standardized](https://github.com/lifewatch/user-analysis/tree/main/LW_publications_standardized/ReadMe.md)). 
 
-And finally, also jupyter notebooks with various user analysis statistics: [jupyter notebooks](https://github.com/lifewatch/user-analysis/notebooks/ReadMe.md).
+And finally, also jupyter notebooks with various user analysis statistics: [jupyter notebooks](https://github.com/lifewatch/user-analysis/tree/main/notebooks/ReadMe.md).
 
 
 
