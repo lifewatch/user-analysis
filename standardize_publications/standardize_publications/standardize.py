@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 import os
-import shutil
+from pathlib import Path
 from pandas._testing import assert_index_equal
 from pandas.api.types import is_string_dtype
 
@@ -11,25 +11,20 @@ from .wos import *
 
 
 class Standardizator:
-    def __init__(self, pubfolder: str) -> pd.DataFrame:
+    def __init__(self, pubfile: str, reffile: str) -> pd.DataFrame:
         """
         constructor
 
-        :param file: name of folder with publication info
+        :param pubfile: name of file with publication info
         :type file: str
         :returns: dataframe object of publication files in folder
         :rtype: pd.DataFrame
         """
 
-        # load standardized data if present, otherwise load non stand data:
-        if os.path.isfile(
-            os.path.join(os.pardir, "standardized_data", "stand_data.csv")
-        ):
-            self.data = load_filedata(
-                os.path.join(os.pardir, "standardized_data", "stand_data.csv")
-            )
-        else:
-            self.data = load_folderdata(pubfolder, "publication_data")
+        # non-standardized data:
+        self.data = load_filedata(os.path.abspath(pubfile))
+        # standardized reference affiliations:
+        self.refdata = load_filedata(os.path.abspath(reffile))
 
     def add_wosinfo(self, wos_export: str) -> pd.DataFrame:
         """Add information from wos_export"""

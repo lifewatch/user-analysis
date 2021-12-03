@@ -16,9 +16,9 @@ def load_folderdata(foldername, folderdir):
         filedir = os.path.join(os.pardir, folderdir, file)
 
         # Load data files
-        if file_extension == '.xlsx' or file_extension == '.xls':
+        if file_extension == ".xlsx" or file_extension == ".xls":
             dflist += [pd.read_excel(filedir)]
-        elif file_extension == '.csv':
+        elif file_extension == ".csv":
             dflist += [pd.read_csv(filedir)]
 
     # Data file(s) as one dataframe
@@ -34,9 +34,9 @@ def load_folderdata(foldername, folderdir):
 def load_filedata(filername):
     """this functions loads the specified data file as a pandas dataframe."""
 
-    if filername.endswith('.xlsx') or filername.endswith('.xls'):
+    if str(filername).endswith(".xlsx") or str(filername).endswith(".xls"):
         stand_data = pd.read_excel(filername)
-    elif filername.endswith('.csv'):
+    elif str(filername).endswith(".csv"):
         stand_data = pd.read_csv(filername)
 
     return stand_data
@@ -46,8 +46,8 @@ def update_datafile(data) -> float:
     """update file with standardized information"""
 
     # Check if dir exists
-    outputdir = os.path.join(os.pardir, 'standardized_data')
-    outputfile = os.path.join(outputdir, 'stand_data.csv')
+    outputdir = os.path.join(os.pardir, "standardized_data")
+    outputfile = os.path.join(outputdir, "stand_data.csv")
     if not os.path.isdir(outputdir):
         os.mkdir(outputdir)
     # Output data
@@ -60,8 +60,8 @@ def best_standmatch(stand_file, affiliation):
     standaffillist = []
     # Make list of non-stand affiliations where match ratio (between non stand and stand affil) > 0.8
     for index, row in stand_file.iterrows():
-        affil_longstand = row['Institute']
-        affil_stand = row['Institute standardized']
+        affil_longstand = row["Institute"]
+        affil_stand = row["Institute standardized"]
 
         diffobj = difflib.SequenceMatcher(None, affiliation, affil_longstand)
         if diffobj.ratio() > 0.8:

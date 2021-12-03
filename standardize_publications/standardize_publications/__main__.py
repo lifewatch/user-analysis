@@ -23,14 +23,14 @@ def get_arg_parser():
     )
 
     parser.add_argument(
-        "-pd",
-        "--publiData",
-        help="Specifies the folder with non-standardized publications data",
+        "-pdf",
+        "--publidatafile",
+        help="Specifies the file location with non-standardized publications data",
     )
     parser.add_argument(
         "-srf",
         "--standreffile",
-        help="Specifies the file with standardized affiliation data",
+        help="Specifies the file location with standardized affiliation data",
     )
     parser.add_argument(
         "-wd",
@@ -39,8 +39,14 @@ def get_arg_parser():
     )
     # to do: move this within make_standardized function
     parser.add_argument(
-        "-col",
+        "-c",
         "--column",
+        choices=["Affiliation", "wos_affil"],
+        help="Specifies the column used to match similarity against in the reference data",
+    )
+    parser.add_argument(
+        "-m",
+        "--method",
         choices=["Affiliation", "wos_affil"],
         help="Specifies the column used to match similarity against in the reference data",
     )
@@ -57,15 +63,15 @@ def get_arg_parser():
 
 
 def make_standardized(args: argparse.Namespace):
-    df = Standardizator(args.publicationData)
-    if args.wosExportData is not None:
-        df.add_wosinfo(args.wosExportData)
+    df = Standardizator(args.publidatafile, args.standreffile)
+    if args.wosdata is not None:
+        df.add_wosinfo(args.wosdata)
 
-    if args.referenceFile is not None:
-        # df.exactMatch(args.referenceFile)
-        if args.column is not None:
-            df.similarityMatch(args.referenceFile, args.column)
+    """if args.column is not None and args.method is not None:
+        df.standardize(args.column, args.method)"""
 
+    """if args.standdata is not None:
+        df.to_file(folder=args.standdata)"""
     return df
 
 
@@ -82,7 +88,7 @@ def main():
     """
     args = get_arg_parser().parse_args()
 
-    if args.publicationData is not None:
+    if args.publidatafile is not None:
         df = make_standardized(args)
 
     """if args.standardizedData is not None:

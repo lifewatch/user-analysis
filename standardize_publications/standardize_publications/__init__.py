@@ -7,5 +7,4 @@
 
 """
 
-from .LWStandardize import *
-
+from .standardize import *
