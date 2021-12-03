@@ -6,10 +6,11 @@ from pandas._testing import assert_index_equal
 # all functions needed for Standardization and Labelling:
 
 
-def load_folderdata(foldername, folderdir):
+def load_folderdata(foldername):
     """this functions reads the data files in a folder (which are assumed to have the same tabular structure)
     and loads them into 1 dataframe."""
 
+    folderdir = os.path.abspath(foldername)
     dflist = []
     for file in os.listdir(foldername):
         filename, file_extension = os.path.splitext(file)
@@ -31,15 +32,26 @@ def load_folderdata(foldername, folderdir):
     return data
 
 
-def load_filedata(filername):
+def load_filedata(filename):
     """this functions loads the specified data file as a pandas dataframe."""
 
-    if str(filername).endswith(".xlsx") or str(filername).endswith(".xls"):
-        stand_data = pd.read_excel(filername)
-    elif str(filername).endswith(".csv"):
-        stand_data = pd.read_csv(filername)
+    if str(filename).endswith(".xlsx") or str(filename).endswith(".xls"):
+        stand_data = pd.read_excel(filename)
+    elif str(filename).endswith(".csv"):
+        stand_data = pd.read_csv(filename)
 
     return stand_data
+
+
+def write_filedata(data: pd.DataFrame, filename: str):
+    """this functions loads the specified data file as a pandas dataframe."""
+
+    if str(filename).endswith(".xlsx") or str(filename).endswith(".xls"):
+        data.to_excel(filename)
+    elif str(filename).endswith(".csv"):
+        data.to_csv(filename)
+
+    return data
 
 
 def update_datafile(data) -> float:

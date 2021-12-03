@@ -23,14 +23,14 @@ def get_arg_parser():
     )
 
     parser.add_argument(
-        "-pdf",
-        "--publidatafile",
-        help="Specifies the file location with non-standardized publications data",
+        "-i",
+        "--input",
+        help="Specifies the input publications that are to be standardized",
     )
     parser.add_argument(
         "-srf",
         "--standreffile",
-        help="Specifies the file location with standardized affiliation data",
+        help="Specifies the file with standardized affiliation data",
     )
     parser.add_argument(
         "-wd",
@@ -51,9 +51,9 @@ def get_arg_parser():
         help="Specifies the column used to match similarity against in the reference data",
     )
     parser.add_argument(
-        "-sd",
-        "--standdata",
-        help="Specifies the folder with standardized data",
+        "-o",
+        "--output",
+        help="Specifies the output file of livewatch publications with added standardized affiliation information",
     )
     """parser.add_argument(
         "-labelfile", "--labelFile", help="Specifies the file with label information"
@@ -63,7 +63,8 @@ def get_arg_parser():
 
 
 def make_standardized(args: argparse.Namespace):
-    df = Standardizator(args.publidatafile, args.standreffile)
+    df = Standardizator(args.input, args.standreffile)
+    print("Adding information from WoS-export")
     if args.wosdata is not None:
         df.add_wosinfo(args.wosdata)
 
@@ -72,6 +73,10 @@ def make_standardized(args: argparse.Namespace):
 
     """if args.standdata is not None:
         df.to_file(folder=args.standdata)"""
+
+    print("Writing dataframe to output-file")
+    if args.output is not None:
+        df.to_file(args.output)
     return df
 
 
@@ -88,7 +93,7 @@ def main():
     """
     args = get_arg_parser().parse_args()
 
-    if args.publidatafile is not None:
+    if args.input is not None:
         df = make_standardized(args)
 
     """if args.standardizedData is not None:

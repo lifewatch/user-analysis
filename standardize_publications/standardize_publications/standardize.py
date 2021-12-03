@@ -6,7 +6,13 @@ from pathlib import Path
 from pandas._testing import assert_index_equal
 from pandas.api.types import is_string_dtype
 
-from .functions import load_folderdata, load_filedata, best_standmatch, update_datafile
+from .functions import (
+    # load_folderdata,
+    load_filedata,
+    best_standmatch,
+    # update_datafile,
+    write_filedata,
+)
 from .wos import *
 
 
@@ -21,26 +27,30 @@ class Standardizator:
         :rtype: pd.DataFrame
         """
 
+        self.pubfile = pubfile
+        self.reffile = reffile
         # non-standardized data:
-        self.data = load_filedata(os.path.abspath(pubfile))
+        self.data = load_filedata(os.path.abspath(self.pubfile))
         # standardized reference affiliations:
-        self.refdata = load_filedata(os.path.abspath(reffile))
+        self.refdata = load_filedata(os.path.abspath(self.reffile))
 
     def add_wosinfo(self, wos_export: str) -> pd.DataFrame:
         """Add information from wos_export"""
 
-        # to fix
-        test = WOS(self.data, wos_export).add_WOSaffil()
-        test.add_WOScountry()
-        test.add_WOSkeywords()
-        test.add_WOSpluskeywords()
-        test.add_WOScategories()
-        test.add_WOSresearcharea()
-        test.add_WOScitations()
-        test.add_WOSusage()
-        update_datafile(test)
-
+        wos_data = load_folderdata(wos_export)
+        self.data = add_WOSaffil(self.data, wos_data)
+        self.data = add_WOScountry(self.data, wos_data)
+        self.data = add_WOSkeywords(self.data, wos_data)
+        self.data = add_WOSpluskeywords(self.data, wos_data)
+        self.data = add_WOScategories(self.data, wos_data)
+        self.data = add_WOSresearcharea(self.data, wos_data)
+        # self.data = add_WOScitations(self.data, wos_data)
+        # self.data = add_WOSusage(self.data, wos_data)
         return self
+
+    def to_file(self, standdatafile):
+        # note: file gets overwritten if exists already
+        write_filedata(self.data, standdatafile)
 
     def exactMatch(self, stand_file: str) -> pd.DataFrame:
         """
@@ -66,7 +76,7 @@ class Standardizator:
                     self.data["Affiliation"] == row["Institute"], "stand_method"
                 ] = "exact match"
 
-            update_datafile(self.data)
+            # update_datafile(self.data)
             print(
                 "Added exact matches between 'Affiliation' column and 'Institute' column from standardized list to %s"
                 % os.path.join(os.pardir, "standardized_data", "stand_data.csv")
@@ -115,7 +125,7 @@ class Standardizator:
                 self.data.at[index1, "stand_affil"] = stand_affil
                 self.data.at[index1, "stand_method"] = col_text
 
-            update_datafile(self.data)
+            # update_datafile(self.data)
             print(
                 "0.80 similar matches between %s column and 'Institute' column from standardized list were added to %s"
                 % (
