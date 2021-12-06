@@ -2,6 +2,7 @@
 import pandas as pd
 import numpy as np
 import os
+import pycountry
 from pathlib import Path
 from pandas._testing import assert_index_equal
 from pandas.api.types import is_string_dtype
@@ -54,37 +55,40 @@ class Standardizator:
 
     def exactMatch(self, stand_file: str) -> pd.DataFrame:
         """
-        Check for extact matches between 'Affiliation' (from IMIS) and 'Institute' (from Affiliation_Standardized);
+        Check for extact matches between 'Institute' (from Affiliation_Standardized) and 'Affiliation' (from IMIS) or 'wos_affil' (from adding the wos export);
         and adds 'Institute Standardized' to stand_affil in case of exact match.
         :param stand_file: standardized data file
         :type stand_file: str
         """
 
-        # Load standardized affiliation names:
         self.stand_data = load_filedata(stand_file)
 
-        # Find exact match & add standardized affiliation:
-        if (
-            "stand_method" not in self.data.columns
-            or "exact match" not in self.data["stand_method"]
-        ):
-            for index, row in self.stand_data.iterrows():
-                self.data.loc[
-                    self.data["Affiliation"] == row["Institute"], "stand_affil"
-                ] = row["Institute standardized"]
-                self.data.loc[
-                    self.data["Affiliation"] == row["Institute"], "stand_method"
-                ] = "exact match"
+        # Find exact match & add standardized affiliation: - note: not most efficient way to do this, but it works for now...
+        self.data["stand_affil"] = ""
+        col_index = self.data.columns.get_loc("stand_affil")
 
-            # update_datafile(self.data)
-            print(
-                "Added exact matches between 'Affiliation' column and 'Institute' column from standardized list to %s"
-                % os.path.join(os.pardir, "standardized_data", "stand_data.csv")
-            )
+        for index, row in self.data.iterrows():
+            print(index, row["Affiliation"])
+            no_exact_match = True
+            for index2, row2 in self.stand_data.iterrows():
+                
+                if isinstance(row["Affiliation"], str) and no_exact_match == True:  
+                    #check and add first found match:
+                    if row["Affiliation"] == row2["Institute"]:
+                        self.data.iloc[index, col_index] = [row2["Institute standardized"]]
+                        no_exact_match = False
+                        print("found match for Affiliation")
+                    
+                elif isinstance(row["wos_affil"], str) and no_exact_match == True:
+                    #check & add first found match:
+                    if row["wos_affil"] == row2["Institute"]:
+                        self.data.iloc[index, col_index] = [row2["Institute standardized"]]
+                        no_exact_match = False
+                        print("found match for wos_affil")
 
         return self
 
-    def similarityMatch(self, stand_file: str, col_stand: str) -> pd.DataFrame:
+    def similarityMatch(self, stand_file: str) -> pd.DataFrame:
         """
         Check similarity between 'Institute standardized' and 'raw' affiliation names in the data (columns 'Affiliation' or 'wos_affil').
         In case of a similarity higher than 80%, the standardized affiliation name is added in the 'stand_affil' column.
@@ -93,45 +97,61 @@ class Standardizator:
         :type stand_file: str
         """
 
-        # Load standardized affiliation names:
         self.stand_data = load_filedata(stand_file)
 
-        col_text = "similarity match %s" % col_stand
-        if (
-            "stand_method" not in self.data.columns
-            or col_text not in self.data["stand_method"]
-        ):
-            print(col_text)
-            """# select a subset of data that isn't standardized yet
-            if 'stand_affil' in self.data.columns:
-                self.nonstand_data = self.data.loc[
-                    self.data['stand_affil'] == 'nan']
-            else:
-                self.nonstand_data = self.data"""
+        # Find similarity match & add standardized affiliation: - note: not most efficient way to do this, but it works for now...
+        standaffil_index = self.data.columns.get_loc("stand_affil")
+        self.data["similarity_method"] = ""
+        standaffil_method_index = self.data.columns.get_loc("similarity_method")
+        
+        for index, row in self.data.iterrows():
+            no_similar_match = True
+            if len(row["stand_affil"])==0:
+                
+                if isinstance(row["Affiliation"], str):
+                    best_Affil_match = best_standmatch(self.stand_data, row["Affiliation"])
+                    if best_Affil_match:
+                        #print(best_Affil_match)
+                        self.data.iloc[index, standaffil_index] = best_Affil_match
+                        self.data.iloc[index, standaffil_method_index] = "x"
 
-            # standardize data
-            for index1, row1 in self.data.iterrows():
-                stand_affil = row1["stand_affil"]
-
-                # non stand data:
-                if type(stand_affil) == float:
-                    affiliation = str(row1[col_stand])
-
-                    best_match = best_standmatch(self.stand_data, affiliation)
-                    print(best_match)
-                    if best_match is not None:
-                        stand_affil = best_match
-
-                self.data.at[index1, "stand_affil"] = stand_affil
-                self.data.at[index1, "stand_method"] = col_text
-
-            # update_datafile(self.data)
-            print(
-                "0.80 similar matches between %s column and 'Institute' column from standardized list were added to %s"
-                % (
-                    col_stand,
-                    os.path.join(os.pardir, "standardized_data", "stand_data.csv"),
-                )
-            )
+                elif isinstance(row["wos_affil"], str):
+                    best_wosAffil_match = best_standmatch(self.stand_data, row["wos_affil"])
+                    if best_wosAffil_match:
+                        #print(best_wosAffil_match)
+                        self.data.iloc[index, standaffil_index] = best_wosAffil_match
+                        self.data.iloc[index, standaffil_method_index] = "x"
 
         return self
+    
+
+    def add_affilinfo(self, affil_info: str):
+        
+        #load affiliation info:
+        self.affilinfo = load_filedata(affil_info)
+
+        #for each standard affiliation, add affilation information:
+        for index, row in self.data.iterrows():
+
+            if row["stand_affil"] in self.affilinfo["stand_affil"]:
+                pass
+
+    def add_standcountry(self):
+
+        # should be: if country (from standardizing 'Affiliation' column) or wos_country are present --> country_stand col added with standardized country names
+        # for now only adding with wos_country as standardizing of affiliation info not working yet
+        print("Adding standardized country information, this could take a while...")
+        country_lst = []
+        for index, row in self.data.iterrows():
+            
+            if "wos_country" in self.data.columns and isinstance(row["wos_country"], str):
+                print(row['wos_country'])
+                if row["wos_country"] == 'South Korea' or row["wos_country"] == 'Peoples R China' or row["wos_country"] == 'North Ireland' or row["wos_country"] == 'Bosnia & Herceg': #seems to break on 'south korea'
+                    country_lst += [row["wos_country"]]
+                else:
+                    country = pycountry.countries.search_fuzzy(str(row["wos_country"]))
+                    print(len(country))
+                    country_lst += [country[0].name]
+            else:
+                print('wos_country not a str', row['wos_country'])
+                #country_lst += [row["wos_country"]]

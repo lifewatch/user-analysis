@@ -28,28 +28,35 @@ def get_arg_parser():
         help="Specifies the input publications that are to be standardized",
     )
     parser.add_argument(
-        "-srf",
-        "--standreffile",
-        help="Specifies the file with standardized affiliation data",
+        "-sl",
+        "--standref_long",
+        help="Specifies the mapping between affiliations and the standardized affiliation",
+    )
+    parser.add_argument(
+        "-si",
+        "--standref_info",
+        help="Specifies the standardized affiliation data with extra info regarding country, flemish, category, QH-term, ...",
     )
     parser.add_argument(
         "-wd",
         "--wosdata",
         help="Specifies the folder with export from Web of Science (of publications with a WoS code)",
     )
-    # to do: move this within make_standardized function
+    
+    """
+    # to do: implement choice of col and mode to standardize
     parser.add_argument(
         "-c",
         "--column",
-        choices=["Affiliation", "wos_affil"],
-        help="Specifies the column used to match similarity against in the reference data",
+        action="append",
+        help="Specifies the columns that are to be standardized",
     )
     parser.add_argument(
         "-m",
-        "--method",
-        choices=["Affiliation", "wos_affil"],
-        help="Specifies the column used to match similarity against in the reference data",
-    )
+        "--mode",
+        choices=["exact", "fuzzy"],
+        help="Specifies the mode used to standardize, either as exact match or fuzzy matches",
+    )"""
     parser.add_argument(
         "-o",
         "--output",
@@ -63,16 +70,22 @@ def get_arg_parser():
 
 
 def make_standardized(args: argparse.Namespace):
-    df = Standardizator(args.input, args.standreffile)
+    df = Standardizator(args.input, args.standref_long)
     print("Adding information from WoS-export")
     if args.wosdata is not None:
         df.add_wosinfo(args.wosdata)
 
-    """if args.column is not None and args.method is not None:
-        df.standardize(args.column, args.method)"""
+    print("Standardizing affiliation information")
+    if args.standref_long is not None:
+        df.exactMatch(args.standref_long)
+        df.similarityMatch(args.standref_long)
 
-    """if args.standdata is not None:
-        df.to_file(folder=args.standdata)"""
+    #print("Adding other affiliation information")    
+    #if args.standref_info is not None:
+    #    df.add_affilinfo(args.standref_info)
+
+    #print("Standardizing country")
+    #df.add_standcountry()
 
     print("Writing dataframe to output-file")
     if args.output is not None:

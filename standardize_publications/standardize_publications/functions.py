@@ -47,9 +47,9 @@ def write_filedata(data: pd.DataFrame, filename: str):
     """this functions loads the specified data file as a pandas dataframe."""
 
     if str(filename).endswith(".xlsx") or str(filename).endswith(".xls"):
-        data.to_excel(filename)
+        data.to_excel(filename, encoding='utf8')
     elif str(filename).endswith(".csv"):
-        data.to_csv(filename)
+        data.to_csv(filename, encoding='utf8')
 
     return data
 
@@ -87,4 +87,5 @@ def best_standmatch(stand_file, affiliation):
         best_match = standaffillist[max_index]
     else:
         best_match = None
+    #print("The best match is: ", best_match)
     return best_match
