@@ -157,18 +157,17 @@ class Standardizator:
 
         # should be: if country (from standardizing 'Affiliation' column) or wos_country are present --> country_stand col added with standardized country names
         # for now only adding with wos_country as standardizing of affiliation info not working yet
+        'stand_country'
         print("Adding standardized country information, this could take a while...")
-        country_lst = []
         for index, row in self.data.iterrows():
             
-            if "wos_country" in self.data.columns and isinstance(row["wos_country"], str):
-                print(row['wos_country'])
-                if row["wos_country"] == 'South Korea' or row["wos_country"] == 'Peoples R China' or row["wos_country"] == 'North Ireland' or row["wos_country"] == 'Bosnia & Herceg': #seems to break on 'south korea'
-                    country_lst += [row["wos_country"]]
-                else:
-                    country = pycountry.countries.search_fuzzy(str(row["wos_country"]))
-                    print(len(country))
-                    country_lst += [country[0].name]
-            else:
-                print('wos_country not a str', row['wos_country'])
-                #country_lst += [row["wos_country"]]
+            if isinstance(row['stand_country'], str):
+                country = pycountry.countries.search_fuzzy(str(row["wos_country"]))
+                #alpha2code = country[0].
+
+            elif isinstance(row['wos_country'], str):
+                pass
+            
+            #if row["wos_country"] == 'South Korea' or row["wos_country"] == 'Peoples R China' or row["wos_country"] == 'North Ireland' or row["wos_country"] == 'Bosnia & Herceg': #seems to break on these
+
+        
