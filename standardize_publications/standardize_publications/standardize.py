@@ -131,10 +131,27 @@ class Standardizator:
         self.affilinfo = load_filedata(affil_info)
 
         #for each standard affiliation, add affilation information:
-        for index, row in self.data.iterrows():
+        self.data["stand_country"] = ""
+        stand_country_index = self.data.columns.get_loc("stand_country")
+        self.data["stand_flemish"] = ""
+        stand_flemish_index = self.data.columns.get_loc("stand_flemish")
+        self.data["stand_GROUP"] = ""
+        stand_GROUP_index = self.data.columns.get_loc("stand_GROUP")
+        self.data["QH"] = ""
+        QH_index = self.data.columns.get_loc("QH")
 
-            if row["stand_affil"] in self.affilinfo["stand_affil"]:
-                pass
+        for index, row in self.data.iterrows(): #note: again, very unefficient, but it works for now...
+
+            for index2, row2 in self.affilinfo.iterrows():
+
+                if row["stand_affil"] == row2["Institute_stand_check"]:
+                    self.data.iloc[index, stand_country_index] = row2['Country_stand']
+                    self.data.iloc[index, stand_flemish_index] = row2['Flemish']
+                    self.data.iloc[index, stand_GROUP_index] = row2['GROUP']
+                    self.data.iloc[index, QH_index] = row2['QH']
+        
+        return self
+                
 
     def add_standcountry(self):
 

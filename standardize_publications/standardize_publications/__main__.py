@@ -80,9 +80,9 @@ def make_standardized(args: argparse.Namespace):
         df.exactMatch(args.standref_long)
         df.similarityMatch(args.standref_long)
 
-    #print("Adding other affiliation information")    
-    #if args.standref_info is not None:
-    #    df.add_affilinfo(args.standref_info)
+    print("Adding other affiliation information")    
+    if args.standref_info is not None:
+        df.add_affilinfo(args.standref_info)
 
     #print("Standardizing country")
     #df.add_standcountry()
