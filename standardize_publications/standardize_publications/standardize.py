@@ -137,7 +137,7 @@ class Standardizator:
         stand_flemish_index = self.data.columns.get_loc("stand_flemish")
         self.data["stand_GROUP"] = ""
         stand_GROUP_index = self.data.columns.get_loc("stand_GROUP")
-        self.data["QH"] = ""
+        self.data["stand_QH"] = ""
         QH_index = self.data.columns.get_loc("QH")
 
         for index, row in self.data.iterrows(): #note: again, very unefficient, but it works for now...
