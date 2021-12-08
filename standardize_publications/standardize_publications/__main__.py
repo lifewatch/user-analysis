@@ -5,12 +5,7 @@ import logging
 
 from .standardize import *
 
-"""from .LWlabels import *"""
-
-logname = "standardize_publications"
-logfile = logname + ".log"
-logging.basicConfig(level=logging.INFO, filename=logfile)
-log = logging.getLogger(logname)
+from standardize_publications import log
 
 
 def get_arg_parser():
@@ -68,6 +63,10 @@ def get_arg_parser():
 
     return parser
 
+def enable_logging(args: argparse.Namespace):
+    #to do: read debug level and set it
+    #to do: check logging-file and use it or default to standard out
+    pass
 
 def make_standardized(args: argparse.Namespace):
     df = Standardizator(args.input, args.standref_long)
@@ -105,7 +104,8 @@ def main():
     The main entry point to this module.
     """
     args = get_arg_parser().parse_args()
-
+    enable_logging(args)
+    
     if args.input is not None:
         df = make_standardized(args)
 
