@@ -4,7 +4,6 @@ import sys
 import logging
 
 from .standardize import *
-
 from standardize_publications import log
 
 
@@ -16,6 +15,22 @@ def get_arg_parser():
         description="Standardizes (lifewatch) publication data exported from IMIS",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
+
+    parser.add_argument(i
+        '-l', 
+        '--logfile', 
+        type=str, 
+        action='store', 
+        help='where to move the logging to', 
+    )
+    parser.add_argument(
+        '-L', 
+        '--loglevel', 
+        type=str, 
+        action='store', 
+        help='level of logging critical|error|warn|info|debug|trace', 
+    )
+
 
     parser.add_argument(
         "-i",
@@ -63,10 +78,28 @@ def get_arg_parser():
 
     return parser
 
+
 def enable_logging(args: argparse.Namespace):
-    #to do: read debug level and set it
-    #to do: check logging-file and use it or default to standard out
-    pass
+    lh = None
+    if args.logfile is None:
+        lh = logging.StreamHandler()
+    else:
+        lh = logging.FileHandler(args.logfile)
+    lh.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+    lh.setLevel(logging.CRITICAL)
+
+    if args.loglevel is not None:
+        level_map = {
+            "critical": logging.CRITICAL,
+            "error": logging.ERROR,
+            "warn": logging.WARN,
+            "info": logging.INFO,
+            "debug": logging.DEBUG,
+        }
+        level = level_map.get(str(args.loglevel).lower(), logging.CRITICAL)
+        lh.setLevel(level)
+    logger.addHandler(lh)
+
 
 def make_standardized(args: argparse.Namespace):
     df = Standardizator(args.input, args.standref_long)
