@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 import os
-import pycountry
+#import pycountry
 from pathlib import Path
 from pandas._testing import assert_index_equal
 from pandas.api.types import is_string_dtype
@@ -77,14 +77,14 @@ class Standardizator:
                     if row["Affiliation"] == row2["Institute"]:
                         self.data.iloc[index, col_index] = [row2["Institute standardized"]]
                         no_exact_match = False
-                        print("found match for Affiliation")
+                        print("found exact match for Affiliation")
                     
                 elif isinstance(row["wos_affil"], str) and no_exact_match == True:
                     #check & add first found match:
                     if row["wos_affil"] == row2["Institute"]:
                         self.data.iloc[index, col_index] = [row2["Institute standardized"]]
                         no_exact_match = False
-                        print("found match for wos_affil")
+                        print("found exact match for wos_affil")
 
         return self
 
@@ -105,20 +105,21 @@ class Standardizator:
         standaffil_method_index = self.data.columns.get_loc("similarity_method")
         
         for index, row in self.data.iterrows():
-            no_similar_match = True
             if len(row["stand_affil"])==0:
                 
                 if isinstance(row["Affiliation"], str):
+                    affil = row['Affiliation']
                     best_Affil_match = best_standmatch(self.stand_data, row["Affiliation"])
                     if best_Affil_match:
-                        #print(best_Affil_match)
+                        print("found best_affil_match for 'Affiliation': ", best_Affil_match)
                         self.data.iloc[index, standaffil_index] = best_Affil_match
                         self.data.iloc[index, standaffil_method_index] = "x"
+                        
 
                 elif isinstance(row["wos_affil"], str):
                     best_wosAffil_match = best_standmatch(self.stand_data, row["wos_affil"])
                     if best_wosAffil_match:
-                        #print(best_wosAffil_match)
+                        print("found best_affil_match for 'wos_affil': ",best_wosAffil_match)
                         self.data.iloc[index, standaffil_index] = best_wosAffil_match
                         self.data.iloc[index, standaffil_method_index] = "x"
 
@@ -138,7 +139,7 @@ class Standardizator:
         self.data["stand_GROUP"] = ""
         stand_GROUP_index = self.data.columns.get_loc("stand_GROUP")
         self.data["stand_QH"] = ""
-        QH_index = self.data.columns.get_loc("QH")
+        QH_index = self.data.columns.get_loc("stand_QH")
 
         for index, row in self.data.iterrows(): #note: again, very unefficient, but it works for now...
 
@@ -153,7 +154,7 @@ class Standardizator:
         return self
                 
 
-    def add_standcountry(self):
+    """def add_standcountry(self):
 
         # should be: if country (from standardizing 'Affiliation' column) or wos_country are present --> country_stand col added with standardized country names
         # for now only adding with wos_country as standardizing of affiliation info not working yet
@@ -169,5 +170,5 @@ class Standardizator:
                 pass
             
             #if row["wos_country"] == 'South Korea' or row["wos_country"] == 'Peoples R China' or row["wos_country"] == 'North Ireland' or row["wos_country"] == 'Bosnia & Herceg': #seems to break on these
-
+"""
         

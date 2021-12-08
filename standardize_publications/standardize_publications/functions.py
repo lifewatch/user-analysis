@@ -76,9 +76,12 @@ def best_standmatch(stand_file, affiliation):
         affil_stand = row["Institute standardized"]
 
         diffobj = difflib.SequenceMatcher(None, affiliation, affil_longstand)
-        if diffobj.ratio() > 0.8:
+        if diffobj.ratio() >= 0.8:
             ratiolist += [diffobj.ratio()]
             standaffillist += [affil_stand]
+
+    print("the ratio list: ", ratiolist)
+    print("the standardaffil list: ", standaffillist)
 
     # Select & return best candidate from list - Get the stand affil with highest match ratio
     if len(ratiolist) > 0:
@@ -87,5 +90,7 @@ def best_standmatch(stand_file, affiliation):
         best_match = standaffillist[max_index]
     else:
         best_match = None
-    #print("The best match is: ", best_match)
+    
+    print("The best match is: ", best_match)
+    
     return best_match
