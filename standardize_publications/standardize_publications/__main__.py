@@ -16,7 +16,7 @@ def get_arg_parser():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
 
-    parser.add_argument(i
+    parser.add_argument(
         '-l', 
         '--logfile', 
         type=str, 
@@ -30,7 +30,6 @@ def get_arg_parser():
         action='store', 
         help='level of logging critical|error|warn|info|debug|trace', 
     )
-
 
     parser.add_argument(
         "-i",
@@ -98,7 +97,7 @@ def enable_logging(args: argparse.Namespace):
         }
         level = level_map.get(str(args.loglevel).lower(), logging.CRITICAL)
         lh.setLevel(level)
-    logger.addHandler(lh)
+    log.addHandler(lh)
 
 
 def make_standardized(args: argparse.Namespace):

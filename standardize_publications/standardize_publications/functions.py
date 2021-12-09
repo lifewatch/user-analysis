@@ -3,9 +3,13 @@ import os
 import difflib
 from pandas._testing import assert_index_equal
 
+import logging
+from logging import NullHandler
+
+log = logging.getLogger(__name__)
+log.addHandler(NullHandler())
+
 # all functions needed for Standardization and Labelling:
-
-
 def load_folderdata(foldername):
     """this functions reads the data files in a folder (which are assumed to have the same tabular structure)
     and loads them into 1 dataframe."""
@@ -47,9 +51,9 @@ def write_filedata(data: pd.DataFrame, filename: str):
     """this functions loads the specified data file as a pandas dataframe."""
 
     if str(filename).endswith(".xlsx") or str(filename).endswith(".xls"):
-        data.to_excel(filename, encoding='utf8')
+        data.to_excel(filename, encoding="utf-8")
     elif str(filename).endswith(".csv"):
-        data.to_csv(filename, encoding='utf8')
+        data.to_csv(filename, encoding="utf-8")
 
     return data
 
@@ -80,8 +84,8 @@ def best_standmatch(stand_file, affiliation):
             ratiolist += [diffobj.ratio()]
             standaffillist += [affil_stand]
 
-    print("the ratio list: ", ratiolist)
-    print("the standardaffil list: ", standaffillist)
+    log.info(f" the ratio list: {ratiolist}")
+    log.info(f" the standfile list: {standaffillist}")
 
     # Select & return best candidate from list - Get the stand affil with highest match ratio
     if len(ratiolist) > 0:
@@ -90,7 +94,7 @@ def best_standmatch(stand_file, affiliation):
         best_match = standaffillist[max_index]
     else:
         best_match = None
-    
-    print("The best match is: ", best_match)
-    
+
+    log.info(f" the best match: {best_match}")
+
     return best_match

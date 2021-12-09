@@ -2,7 +2,8 @@
 import pandas as pd
 import numpy as np
 import os
-#import pycountry
+
+# import pycountry
 from pathlib import Path
 from pandas._testing import assert_index_equal
 from pandas.api.types import is_string_dtype
@@ -15,6 +16,12 @@ from .functions import (
     write_filedata,
 )
 from .wos import *
+
+import logging
+from logging import NullHandler
+
+log = logging.getLogger(__name__)
+log.addHandler(NullHandler())
 
 
 class Standardizator:
@@ -71,20 +78,22 @@ class Standardizator:
             print(index, row["Affiliation"])
             no_exact_match = True
             for index2, row2 in self.stand_data.iterrows():
-                
-                if isinstance(row["Affiliation"], str) and no_exact_match == True:  
-                    #check and add first found match:
+
+                if isinstance(row["Affiliation"], str) and no_exact_match == True:
+                    # check and add first found match:
                     if row["Affiliation"] == row2["Institute"]:
-                        self.data.iloc[index, col_index] = [row2["Institute standardized"]]
+                        self.data.iloc[index, col_index] = [
+                            row2["Institute standardized"]
+                        ]
                         no_exact_match = False
-                        print("found exact match for Affiliation")
-                    
+
                 elif isinstance(row["wos_affil"], str) and no_exact_match == True:
-                    #check & add first found match:
+                    # check & add first found match:
                     if row["wos_affil"] == row2["Institute"]:
-                        self.data.iloc[index, col_index] = [row2["Institute standardized"]]
+                        self.data.iloc[index, col_index] = [
+                            row2["Institute standardized"]
+                        ]
                         no_exact_match = False
-                        print("found exact match for wos_affil")
 
         return self
 
@@ -103,35 +112,44 @@ class Standardizator:
         standaffil_index = self.data.columns.get_loc("stand_affil")
         self.data["similarity_method"] = ""
         standaffil_method_index = self.data.columns.get_loc("similarity_method")
-        
+
         for index, row in self.data.iterrows():
-            if len(row["stand_affil"])==0:
-                
+            if len(row["stand_affil"]) == 0:
+
                 if isinstance(row["Affiliation"], str):
-                    affil = row['Affiliation']
-                    best_Affil_match = best_standmatch(self.stand_data, row["Affiliation"])
+                    print(row["Affiliation"])
+                    best_Affil_match = best_standmatch(
+                        self.stand_data, row["Affiliation"]
+                    )
                     if best_Affil_match:
-                        print("found best_affil_match for 'Affiliation': ", best_Affil_match)
+                        print(
+                            "found best_affil_match for 'Affiliation': ",
+                            best_Affil_match,
+                        )
                         self.data.iloc[index, standaffil_index] = best_Affil_match
                         self.data.iloc[index, standaffil_method_index] = "x"
-                        
 
                 elif isinstance(row["wos_affil"], str):
-                    best_wosAffil_match = best_standmatch(self.stand_data, row["wos_affil"])
+                    print(row["wos_affil"])
+                    best_wosAffil_match = best_standmatch(
+                        self.stand_data, row["wos_affil"]
+                    )
                     if best_wosAffil_match:
-                        print("found best_affil_match for 'wos_affil': ",best_wosAffil_match)
+                        print(
+                            "found best_affil_match for 'wos_affil': ",
+                            best_wosAffil_match,
+                        )
                         self.data.iloc[index, standaffil_index] = best_wosAffil_match
                         self.data.iloc[index, standaffil_method_index] = "x"
 
         return self
-    
 
     def add_affilinfo(self, affil_info: str):
-        
-        #load affiliation info:
+
+        # load affiliation info:
         self.affilinfo = load_filedata(affil_info)
 
-        #for each standard affiliation, add affilation information:
+        # for each standard affiliation, add affilation information:
         self.data["stand_country"] = ""
         stand_country_index = self.data.columns.get_loc("stand_country")
         self.data["stand_flemish"] = ""
@@ -141,18 +159,22 @@ class Standardizator:
         self.data["stand_QH"] = ""
         QH_index = self.data.columns.get_loc("stand_QH")
 
-        for index, row in self.data.iterrows(): #note: again, very unefficient, but it works for now...
+        for (
+            index,
+            row,
+        ) in (
+            self.data.iterrows()
+        ):  # note: again, very unefficient, but it works for now...
 
             for index2, row2 in self.affilinfo.iterrows():
 
                 if row["stand_affil"] == row2["Institute_stand_check"]:
-                    self.data.iloc[index, stand_country_index] = row2['Country_stand']
-                    self.data.iloc[index, stand_flemish_index] = row2['Flemish']
-                    self.data.iloc[index, stand_GROUP_index] = row2['GROUP']
-                    self.data.iloc[index, QH_index] = row2['QH']
-        
+                    self.data.iloc[index, stand_country_index] = row2["Country_stand"]
+                    self.data.iloc[index, stand_flemish_index] = row2["Flemish"]
+                    self.data.iloc[index, stand_GROUP_index] = row2["GROUP"]
+                    self.data.iloc[index, QH_index] = row2["QH"]
+
         return self
-                
 
     """def add_standcountry(self):
 
@@ -171,4 +193,3 @@ class Standardizator:
             
             #if row["wos_country"] == 'South Korea' or row["wos_country"] == 'Peoples R China' or row["wos_country"] == 'North Ireland' or row["wos_country"] == 'Bosnia & Herceg': #seems to break on these
 """
-        
