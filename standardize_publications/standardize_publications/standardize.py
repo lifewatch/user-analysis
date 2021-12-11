@@ -79,7 +79,11 @@ class Standardizator:
             no_exact_match = True
             for index2, row2 in self.stand_data.iterrows():
 
-                if isinstance(row["Affiliation"], str) and no_exact_match == True:
+                if (
+                    "Affiliation" in self.data.columns
+                    and isinstance(row["Affiliation"], str)
+                    and no_exact_match == True
+                ):
                     # check and add first found match:
                     if row["Affiliation"] == row2["Institute"]:
                         self.data.iloc[index, col_index] = [
@@ -87,7 +91,11 @@ class Standardizator:
                         ]
                         no_exact_match = False
 
-                elif isinstance(row["wos_affil"], str) and no_exact_match == True:
+                elif (
+                    "wos_affil" in self.data.columns
+                    and isinstance(row["wos_affil"], str)
+                    and no_exact_match == True
+                ):
                     # check & add first found match:
                     if row["wos_affil"] == row2["Institute"]:
                         self.data.iloc[index, col_index] = [
@@ -116,7 +124,9 @@ class Standardizator:
         for index, row in self.data.iterrows():
             if len(row["stand_affil"]) == 0:
 
-                if isinstance(row["Affiliation"], str):
+                if "Affiliation" in self.data.columns and isinstance(
+                    row["Affiliation"], str
+                ):
                     print(row["Affiliation"])
                     best_Affil_match = best_standmatch(
                         self.stand_data, row["Affiliation"]
@@ -129,7 +139,9 @@ class Standardizator:
                         self.data.iloc[index, standaffil_index] = best_Affil_match
                         self.data.iloc[index, standaffil_method_index] = "x"
 
-                elif isinstance(row["wos_affil"], str):
+                elif "wos_affil" in self.data.columns and isinstance(
+                    row["wos_affil"], str
+                ):
                     print(row["wos_affil"])
                     best_wosAffil_match = best_standmatch(
                         self.stand_data, row["wos_affil"]
