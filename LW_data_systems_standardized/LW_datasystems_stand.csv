@@ -1,12 +1,12 @@
 ,DataSystem,Affiliation,Country,Unnamed: 3,Unnamed: 4,Unnamed: 5,stand_affil,similarity_method,stand_country,stand_flemish,stand_GROUP,stand_QH
-0,Marine_species,"School of Computer Science,  University of Manchester and National Centre for Text Mining (NaCTeM),  Manchester Interdisciplinary Biocentre",UK,,,,,,,,,
-1,Marine_species,eOceans,Canada,,,,,,,,,
+0,Marine_species,"School of Computer Science,  University of Manchester and National Centre for Text Mining (NaCTeM),  Manchester Interdisciplinary Biocentre",UK,,,,University of Manchester - Department of computer science,,UK,,University,Science
+1,Marine_species,eOceans,Canada,,,,eOceans,,Global,,Creative body,Civil society
 2,Marine_species,"Centre for Marine and Environmental Studies (CESAM) & Department of Biology,  University of Aveiro",Portugal,,,,University of Aveiro - Department of Biology - Centre for Marine and Environmental Studies (CESAM)  ,x,Portugal,,Research institute,Science
 3,Marine_species,"Ocean Networks Canada, University of Victoria",Canada,,,,University of Victoria - Ocean Networks Canada,,Canada,,University,Science
 4,Marine_species,Dep. Earth Sciences Natural History Museum (NHM) London,UK,,,,NHM (Natural History Museum) - Earth Sciences Department ,x,UK,,Museum,Science
 5,Marine_species,Saatchi & Saatchi,New Zealand,,,,Saatchi & Saatchi,,Global,,Company,Industry
 6,Marine_species,University of New South Wales,Australia,,,,University of New South Wales,,Australia,,University,Science
-7,Marine_species,Wikipedia NL,The Netherlands,,,,Wikipedia,,Global,,Other,Civil society
+7,Marine_species,Wikipedia NL,The Netherlands,,,,Wikipedia,,Global,,Data infrastructure,Science
 8,Marine_species,Dengun Lda.,Portugal,,,,Dengun Digital Agency,,Portugal,,Company,Industry
 9,Marine_species,Taxonomy Group Genbank National Center for Biotechnology Information NIH,USA,,,,National Center for Biotechnology Information (NCBI),x,USA,,Data infrastructure,Science
 10,Marine_species,"ARC Centre of Excellence for Coral Reef Studies, University of Queensland,  Brisbane",Australia,,,,University of Queensland - ARC Centre of Excellence for Coral Reef Studies,x,,,,
@@ -25,13 +25,13 @@
 23,Marine_species,The Marine Biological Association- Data Archive Centre (DASSH),UK,,,,Marine Biological Association (MBA) - Data Archive Centre (DASSH),,UK,,Data infrastructure,Science
 24,Marine_species,"Academia Sinica, Biodiversity Research Center",Taiwan,,,,Academia Sinica - Biodiversity Research Centre,,Taiwan,,Research institute,Science
 25,Marine_species,"Departamento de Biotecnologia Marina, Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE)",Mexico,,,,Center for Scientific Research and Higher Education at Ensenada (CICESE) - Department of marine biotechnology,,Mexico,,Research institute,Science
-26,Marine_species,Filipe Medina de Sousa,Portugal,,,,,,,,,
+26,Marine_species,Filipe Medina de Sousa,Portugal,,,,personal,,,,,
 27,Marine_species,"Friedrich-Alexander-Universität, Erlangen",Germany,,,,University of Erlangen-Nuremberg,,Germany,,University,Science
 28,Marine_species,"University of California, Berkeley, Integrative Biology",US,,,,"University of California, Berkeley - Integrative Biology",,,,,
 29,Marine_species,"Leigh Marine Laboratory, University of Auckland",New Zealand,,,,University of Auckland - Leigh Marine Laboratory,,New Zealand,,Research institute,Science
 30,Marine_species,King Abdullah University of Science and Technology,Saudi Arabia,,,,King Abdullah University of Science and Technology,,Saudi Arabia,,University,Science
 31,Marine_species,National Oceanic and Atmospheric Administration (NOAA); Center for Coastal Environmental Health and Biomolecular Research,USA,,,,NOAA National Oceanic and Atmospheric Administration - Center for Coastal Environmental Health and Biomolecular Research,,USA,,Research institute,Science
-32,Marine_species,Personal,US,,,,,,,,,
+32,Marine_species,Personal,US,,,,personal,,,,,
 33,Marine_species,"The Nature Conservancy, Houston, Texas",USA,,,,The Nature Conservancy,,USA,,Non-profit organization,Civil society
 34,Marine_species,Marine Ecological Surveys Ltd,UK,,,,Marine Ecological Surveys Ltd,,UK,,Consultancy,Industry
 35,Marine_species,AIMS,Australia,,,,AIMS (Australian Institute of Marine Science),,Australia,,Research institute,Science
@@ -39,15 +39,15 @@
 37,Marine_species,"Quantitative Aquatics,  Sto. Domingo",Philippines,,,,"Quantitative Aquatics, Inc.",x,Philippines,,Company,Industry
 38,Marine_species,Circolo attività Subacquee Chieri,Italy,,,,Chieri Underwater Activities Club,,Italy,,Other,Civil society
 39,Marine_species,"Bangor University, School of Ocean Sciences",UK,,,,Bangor University - School of Ocean Sciences,,UK,,University,Science
-40,Marine_species,BGI-Qingdao,China,,,,,,,,,
+40,Marine_species,BGI-Qingdao,China,,,,BGI-Qingdao,,China,,Company,Industry
 41,Marine_species,GBIF,Denmark,,,,GBIF Global Biodiversity Information Facility,,Global,,Data infrastructure,Science
 42,Marine_species,"Petrobras, Rio de Janeiro",Brasil,,,,Petrobras,,Global,,Company,Industry
 43,Marine_species,"Department of Zoology,  Tel Aviv University, Tel Aviv",Israel,,,,Tel Aviv University - Department of Zoology,x,Israel,,University,Science
 44,Marine_species,"Queen's University Marine Laboratory (QML), Belfast",Ireland,,,,Queen's University - Marine Laboratory (QML),,Ireland,,Research institute,Science
 45,Marine_species,Universidade da Coruña,Spain,,,,University of A Coruña,,Spain,,University,Science
 46,Marine_species,Dalhousie University,Canada,,,,Dalhousie University,,Canada,,University,Science
-47,Marine_species,Indonesian Institute of Science,Indonesia,,,,,,,,,
-48,Marine_species,Max Planck Institute for Mathematics in the Sciences,Germany,,,,,,,,,
+47,Marine_species,Indonesian Institute of Science,Indonesia,,,,Indonesian Institute of Science,,Indonesia,,Research institute,Science
+48,Marine_species,Max Planck Institute for Mathematics in the Sciences,Germany,,,,Max-Planck-Institute für Mathematics in the Sciences,,,,,
 49,Marine_species,"Molecular, Ecology, Evolution and Phylogenetics research group, University of Sydney",Australia,,,,"University of Sydney - Molecular, Ecology, Evolution and Phylogenetics research group",,,,,
 50,Marine_species,Federal Environmental Agency,Germany,,,,Federal Environmental Agency,,Germany,,Governmental body,Policy
 51,Marine_species,Aniol S.L.,UK,,,,Aniol S.L.,,UK,,Company,Industry
@@ -70,9 +70,9 @@
 68,Marine_species,"Marine Scotland Science, Marine Laboratory",UK,,,,Marine Scotland - Marine Laboratory,,UK,,Research institute,Science
 69,Marine_species,MUMM,Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS) - MUMM team (Management Unit of the Mathematical Model of the North Sea),,,,,
 70,Marine_species,Musée cantonal de zoologie,Switzerland,,,,Musée cantonal de zoologie Lausanne,,Switzerland,,Museum,Science
-71,Marine_species,MyDiveAlbum,South Africa,,,,,,,,,
+71,Marine_species,MyDiveAlbum,South Africa,,,,MyDiveAlbum,,Global,,Creative body,Civil society
 72,Marine_species,National Institute for Environmental Research and Protection (ISPRA),Italy,,,,National Institute for Environmental Research and Protection (ISPRA),,Italy,,Research institute,Science
-73,Marine_species,"Sorbonne Université/CNRS, Station Biologique de Roscoff",France,,,,,,,,,
+73,Marine_species,"Sorbonne Université/CNRS, Station Biologique de Roscoff",France,,,,Sorbonne Université,x,France,,University,Science
 74,Marine_species,University of Messina,Italy,,,,University of Messina,,Italy,,University,Science
 75,Marine_species,Plymouth Marine Laboratory,UK,,,,PML (Plymouth Marine Laboratory),,,,,
 76,Marine_species,"Centro de Investigaciones Marinas, Universidad de La Habana",Cuba,,,,Universidad de La Habana - Centro de Investigaciones Marinas,,Cuba,,Research institute,Science
@@ -95,14 +95,14 @@
 93,Marine_species,National Oceanic and Atmospheric Administration (NOAA); Marine Ecosystems Division,USA,,,,NOAA National Oceanic and Atmospheric Administration - Marine Ecosystems Division,,USA,,Governmental body,Policy
 94,Marine_species,Japan Agency for Marine-Earth Science and Technology (JAMSTEC),Japan,,,,JAMSTEC (Japan Agency for Marine-Earth Science and Technology),x,Japan,,Governmental body,Policy
 95,Marine_species,Ocean Genome Legacy,USA,,,,Ocean Genome Legacy Center (OGL),,USA,,Research institute,Science
-96,Marine_species,Zoological Institute of RAS,Russia,,,,,,,,,
-97,Marine_species,Zoological Institute of RAS,Russia,,,,,,,,,
+96,Marine_species,Zoological Institute of RAS,Russia,,,,Russian Academy of Sciences (RAS) - Institute of Zoology,,Russia,,Research institute,Science
+97,Marine_species,Zoological Institute of RAS,Russia,,,,Russian Academy of Sciences (RAS) - Institute of Zoology,,Russia,,Research institute,Science
 98,Marine_species,University of Bologna,Italy,,,,University of Colorado,x,USA,,University,Science
 99,Marine_species," Marine Biodiversity Center, Natural History Museum, Los Angeles",US,,,,NHM Natural History Museum of Los Angeles County - Marine Biodiversity Center,x,USA,,Research institute,Science
 100,Marine_species,VIMAR (Vida Marina),Spain,,,,VIMAR (Vida Marina),,,,,
 101,Marine_species,"Florida International University, Biscayne Bay Campus",USA,,,,"Florida International University, Biscayne Bay Campus",,USA,,University,Science
 102,Marine_species,University of Alabama at Birmingham,USA,,,,University of Alabama at Birmingham,,USA,,University,Science
-103,Marine_species,Mathias Lindner,Germany,,,,,,,,,
+103,Marine_species,Mathias Lindner,Germany,,,,personal,,,,,
 104,Marine_species,"IFREMER–DYNECO/VIGIES, Nantes",France,,,,IFREMER - DYNECO (Unité Dynamiques des Ecosystèmes Côtiers),,France,,Research institute,Science
 105,Marine_species,"Cape Cod Museum of Natural History, Brewster, MA",USA,,,,Cape Cod Museum of Natural History,,USA,,Museum,Science
 106,Marine_species,"CREOCEAN Society, Montpellier",France,,,,CREOCEAN,,France,,Consultancy,Industry
@@ -110,7 +110,7 @@
 108,Marine_species,"Korea Institute of Ocean Science and Technology, Ocean Observation and Information Section",Korea,,,,KIOST (Korea Institute of Ocean Science and Technology) - Ocean Observation and Information Section,,South Korea,,Research institute,Science
 109,Marine_species,"Biodiversity Institute of Ontario, University of Guelph",Canada,,,,University of Guelph - Biodiversity Institute of Ontario,,Canada,,Research institute,Science
 110,Marine_species,"Environment Department, University of York",UK,,,,University of York - Environment Department,,UK,,University,Science
-111,Marine_species,Juan J. González,Spain,,,,,,,,,
+111,Marine_species,Juan J. González,Spain,,,,personal,x,,,,
 112,Marine_species,Bitonga Ltd.,UK,,,,Bitonga Ltd.,,UK,,Company,Industry
 113,Marine_species,"University of British Columbia, Fisheries Centre",Canada,,,,University of British Columbia - Fisheries Centre,,Canada,,Research institute,Science
 114,Marine_species,University of California San Diego,USA,,,,"University of California, San Diego (UCSD)",,USA,,University,Science
@@ -130,13 +130,13 @@
 128,Marine_species,National Museums Northern Ireland,Ireland,,,,National Museums Northern Ireland,,Ireland,,Museum,Science
 129,Marine_species,"Department of Paleobiology, National Museum of Natural History, Smithsonian Institution",USA,,,,Smithsonian Institution - Smithsonian National Museum of Natural History - Department of Paleobiology,,USA,,Museum,Science
 130,Marine_species," New York State Museum,Albany",USA,,,,New York State Museum,x,USA,,Museum,Science
-131,Marine_species,Wikipedia,United States,,,,Wikipedia,,Global,,Other,Civil society
+131,Marine_species,Wikipedia,United States,,,,Wikipedia,,Global,,Data infrastructure,Science
 132,Marine_species,Museum of Natural History,USA,,,,Swedish Museum of Natural History,x,Sweden,,Museum,Science
 133,Marine_species,"OceanCertain - Norwegian University of Science and Technology (NTNU), Trondheim",Norway,,,,Norwegian University of Science and Technology (NTNU) - OceanCertain,,Norway,,Research institute,Science
-134,Marine_species,Seasearch c/o Marine Conservation Society,United Kingdom,,,,,,,,,
+134,Marine_species,Seasearch c/o Marine Conservation Society,United Kingdom,,,,Marine Conservation Society,,UK,,Non-profit organization,Civil society
 135,Marine_species,"Roger Williams University, Department of Biology and Marine Biology",US,,,,Roger Williams University - Department of Biology and Marine Biology,,USA,,University,Science
 136,Marine_species,Marine Ecological Solutions Ltd,UK,,,,Marine Ecological Solutions Ltd,,UK,,Consultancy,Industry
-137,Marine_species,Atlantic Reference Centre,Canada,,,,,,,,,
+137,Marine_species,Atlantic Reference Centre,Canada,,,,Huntsman Marine Science Centre - Atlantic Reference Centre (ARC),,Canada,,Research institute,Science
 138,Marine_species,Arizona State University,,,,,Arizona State University,,USA,,University,Science
 139,Marine_species,Marine and Freshwater Institute Iceland,Iceland,,,,Marine and Freshwater Institute Iceland (MFRI),,Iceland,,Research institute,Science
 140,Marine_species,3T Software Labs GmbH,Germany,,,,3T Software Labs GmbH,,Germany,,Company,Industry
@@ -147,44 +147,44 @@
 145,Marine_species,"Biologica Environmental Services Ltd., Victoria",Canada,,,,Biologica Environmental Services Ltd.,,Canada,,Company,Industry
 146,Marine_species,"South African Institute for Aquatic Biodiversity, Grahamstown",South Africa,,,,South African Institute for Aquatic Biodiversity (SAIAB),,South Africa,,Research institute,Science
 147,Marine_species,National Oceanic and Atmospheric Administration,USA,,,,NOAA National Oceanic And Atmospheric Administration,,USA,,Governmental body,Policy
-148,Marine_species,Museum of Comparative Zoology,United States,,,,,,,,,
-149,Marine_species,BGI-Qingdao,China,,,,,,,,,
+148,Marine_species,Museum of Comparative Zoology,United States,,,,Harvard University - Harvard Museum of Comparative Zoology,,USA,,Museum,Science
+149,Marine_species,BGI-Qingdao,China,,,,BGI-Qingdao,,China,,Company,Industry
 150,Marine_species,North Carolina Museum of Natural Sciences,United States,,,,North Carolina Museum of Natural Sciences,x,USA,,Museum,Science
 151,Marine_species,Centre of Marine Sciences,Portugal,,,,University of the Aegean - Department of Marine Sciences,x,Greece,,University,Science
-152,Marine_species, Ocean Ecology Limited,United Kingdom,,,,,,,,,
+152,Marine_species, Ocean Ecology Limited,United Kingdom,,,,Ocean Ecology Limited,,UK,,Consultancy,Industry
 153,Marine_species,University of Tartu Natural History Museum,Estonia,,,,University of Oslo - Natural History Museum,x,Norway,,Museum,Science
 154,Marine_species,"Industrial Ecology Programme, Department of Energy and Process Engineering, Norwegian University of Science and Technology (NTNU)",Norway,,,,Norwegian University of Science and Technology (NTNU) - Faculty of Engineering - Department of Energy and Process Engineering - Industrial Ecology Programme,,Norway,,Research institute,Science
 155,Marine_species,International Council for the Exploration of the Sea,Denmark,,,,ICES International Council for the Exploration of the Sea,x,,,,
 156,Marine_species,"ddms, Inc.",United States,,,,DDMS Inc.,,USA,,Company,Industry
-157,Marine_species,Hopkins Marine Station,USA,,,,,,,,,
+157,Marine_species,Hopkins Marine Station,USA,,,,Stanford University - Hopkins Marine Station,,USA,,Research institute,Science
 158,Marine_species,Fisheries Research Station junagadh agricultural university sikka ,India,,,,Junagadh agricultural university - Fisheries Research Station Sikka,,India,,Research institute,Science
 159,Marine_species,"Project Manager - DDTS EU Exit Programme| Department for Environment, Food and Rural Affairs",United Kingdom,,,,"UK government - Department for Environment, Food and Rural Affairs - Digital, Data & Technology Services (DDTS) EU Exit Programme",,UK,,Governmental body,Policy
 160,Marine_species,Office de l'Environnement de la Corse,France,,,,Office de l'Environnement de la Corse,,France,,Governmental body,Policy
 161,Marine_species,ILVO,Belgium,,,,"ILVO Flanders Research Institute for Agriculture, Fisheries and Food",,Belgium,x,Research institute,Science
-162,Marine_species,Massey University Auckland,New Zealand,,,,,,,,,
+162,Marine_species,Massey University Auckland,New Zealand,,,,Massey University,,New Zealand,,University,Science
 163,Marine_species,The University of Chicago,United States,,,,University of Chicago,x,USA,,University,Science
 164,Marine_species,"University of California, Santa Barbara",USA,,,,University of California Santa Barbara,,USA,,University,Science
 165,Marine_species,Yale university,,,,,Yale University,x,USA,,University,Science
 166,Marine_species,University of Tartu,Estonia,,,,University of Tartu,,Estonia,,University,Science
 167,Marine_species,James Cook University,,,,,James Cook University,,Australia,,University,Science
 168,Marine_species,University of Oslo,Norway,,,,University of Oslo,,Norway,,University,Science
-169,Marine_species,"Swedish Museum of Natural History, Department of Palaeobiology",Sweden,,,,,,,,,
+169,Marine_species,"Swedish Museum of Natural History, Department of Palaeobiology",Sweden,,,,Swedish Museum of Natural History - Department of Palaeobiology,,Sweden,,Museum,Science
 170,Marine_species,"Duke University, William Peace University",United States,,,,Duke University,,USA,,University,Science
-171,Marine_species,Cyprus University of Technology,Cyprus,,,,,,,,,
-172,Marine_species,Aquazoo Löbbecke Museum Düsseldorf,Germany,,,,,,,,,
-173,Marine_species,Florida International University,,,,,,,,,,
-174,Marine_species,"iNaturalist, California Academy of Scienes and National Geogrraphic Society",United States,,,,,,,,,
+171,Marine_species,Cyprus University of Technology,Cyprus,,,,Cyprus University of Technology,,Cyprus,,University,Science
+172,Marine_species,Aquazoo Löbbecke Museum Düsseldorf,Germany,,,,Aquazoo Löbbecke Museum,x,Germany,,Museum,Science
+173,Marine_species,Florida International University,,,,,Florida International University,,USA,,University,Science
+174,Marine_species,"iNaturalist, California Academy of Scienes and National Geogrraphic Society",United States,,,,California Academy of Sciences,,USA,,University,Science
 175,Marine_species,"Reef Life Apps, LLC",Czech Republic,,,,"Reef Life Apps, LLC",,Czech Republic,,Other,Civil society
 176,Marine_species,Stichting observation international,Netherlands,,,,observation international,,Global,,Other,Civil society
 177,Marine_species,Arctos,United States,,,,Arctos,,USA,,Company,Industry
 178,Marine_species,Natural History Museum of Los Angeles County,USA,,,,NHM Natural History Museum of Los Angeles County,,USA,,Museum,Science
-179,Marine_species,Leigh Marine Laboratory,New Zealand,,,,,,,,,
+179,Marine_species,Leigh Marine Laboratory,New Zealand,,,,University of Auckland - Leigh Marine Laboratory,,New Zealand,,Research institute,Science
 180,Marine_species,"Ensenada Center for Scientific Research and Higher Education, CICESE",Mexico,,,,Center for Scientific Research and Higher Education at Ensenada (CICESE),,Mexico,,Research institute,Science
 181,Marine_species,National Marine Fisheries Research Institute,Poland,,,,ICAR (International Committee for Animal Recording) - Central Marine Fisheries Research Institute,x,India,,Research institute,Science
 182,Marine_species,Virginia Institute of Marine Science,United States,,,,GEOMAR Helmholtz Centre for Ocean Research Kiel,x,Germany,,Research institute,Science
-183,Marine_species,Harbor Branch Oceanographic Institution,USA,,,,,,,,,
+183,Marine_species,Harbor Branch Oceanographic Institution,USA,,,,Florida Atlantic University - Harbor Branch Oceanographic Institute,,USA,,Research institute,Science
 184,Marine_species,California Academy of Sciences,United States,,,,California Academy of Sciences,,USA,,University,Science
-185,Marine_species,"The Department of Agriculture, Environment and Rural Affairs",UK,,,,,,,,,
+185,Marine_species,"The Department of Agriculture, Environment and Rural Affairs",UK,,,,"Northern Ireland Executive - Department of Agriculture, Environment and Rural Affairs (DAERA)",,UK,,Governmental body,Policy
 186,Marine_species,Northeastern University,USA,,,,Northwest University of China,x,China,,University,Science
 187,Marine_species,Revive & Restore,United States,,,,Revive & Restore,,USA,,Company,Industry
 188,Marine_species,Virginia Institute of Marine Science,United States,,,,GEOMAR Helmholtz Centre for Ocean Research Kiel,x,Germany,,Research institute,Science
@@ -192,7 +192,7 @@
 190,Marine_species,Stony Brook University,United States,,,,Stony Brook University,,,,,
 191,Marine_species,Stony Brook University,USA,,,,Stony Brook University,,,,,
 192,Marine_species,Monterey Bay Aquarium Research Institute (MBARI),United States,,,,Monterey Bay Aquarium Research Institute (MBARI),x,USA,,Research institute,Science
-193,Marine_species,NUI Galway,Ireland,,,,,,,,,
+193,Marine_species,NUI Galway,Ireland,,,,National University of Ireland Galway,,Ireland,,University,Science
 194,Marine_species,University of Hawaii at Hilo,United States,,,,University of Hawaii,x,,,,
 195,Marine_species,Insitech Partners LLC,United States,,,,Insitech Partners LLC,,USA,,Company,Industry
 196,Marine_species,University of Louisiana at Lafayette,United States,,,,University of Louisiana at Lafayette,,USA,,University,Science
@@ -201,21 +201,21 @@
 199,Marine_species,"Sorbonne Université/CNRS, Laboratoire d'Océanographie de Villefranche",France,,,,UPMC - Laboratoire d'Océanographie de Villefranche (LOV),x,France,,Research institute,Science
 200,Marine_species,Thomson Environmental Consultants,United Kingdom,,,,Thomson Environmental Consultants,,UK,,Consultancy,Industry
 201,Marine_species,Monterey Bay Aquarium,USA,,,,Monterey Bay Aquarium,,USA,,Museum,Science
-202,Marine_species,MPEDA ,India,,,,,,,,,
+202,Marine_species,MPEDA ,India,,,,India government - Marine Products Export Development Authority (MPEDA),,India,,Governmental body,Policy
 203,Marine_species,Museums Victoria,Australia,,,,Museums Victoria,,Australia,,Museum,Science
-204,Marine_species,Oceana Europe,Belgium,,,,,,,,,
+204,Marine_species,Oceana Europe,Belgium,,,,Oceana Europe,,Europe,,Non-profit organization,Civil society
 205,Marine_species,University of New Hampshire,United States,,,,University of New Hampshire,,USA,,University,Science
 206,Marine_species,Fugro GB Marine Ltd,United Kingdom,,,,Fugro,,Global,,Consultancy,Industry
 207,Marine_species,University of New Hampshire,USA,,,,University of New Hampshire,,USA,,University,Science
 208,Marine_species,University of New Hampshire,USA,,,,University of New Hampshire,,USA,,University,Science
 209,Marine_species,University of Helsinki,Finland,,,,University of Helsinki,,Finland,,University,Science
-210,Marine_species,"Fisheries and Oceans Canada, Pacific Biological Station",Canada,,,,,,,,,
-211,Marine_species,Department of Fisheries and Oceans,Canada,,,,,,,,,
-212,Marine_species,"National Institutes of Health, National Center for Biotechnology Information",United States,,,,,,,,,
+210,Marine_species,"Fisheries and Oceans Canada, Pacific Biological Station",Canada,,,,Government of Canada - Fisheries and Oceans Canada - Pacific Biological Station,,,,,
+211,Marine_species,Department of Fisheries and Oceans,Canada,,,,Government of Canada - Fisheries and Oceans Canada,,Canada,,Governmental body,Policy
+212,Marine_species,"National Institutes of Health, National Center for Biotechnology Information",United States,,,,National Center for Biotechnology Information (NCBI),,USA,,Data infrastructure,Science
 213,Marine_species,University of Plymouth,UK,,,,University of Plymouth,,UK,,University,Science
 214,Marine_species,National Research Council of Italy,Italy,,,,National Research Council (CNR),x,Italy,,Governmental body,Policy
-215,Marine_species,Hawaii Institute of Marine Biology,Hawaii; U.S.A.,,,,,,,,,
-216,Marine_species,Galway Marine Institute - Foras na Mara,Ireland,,,,,,,,,
+215,Marine_species,Hawaii Institute of Marine Biology,Hawaii; U.S.A.,,,,University of Hawaii - Institute of Marine Biology,,USA,,Research institute,Science
+216,Marine_species,Galway Marine Institute - Foras na Mara,Ireland,,,,Marine Institute,,Ireland,,Research institute,Science
 217,Marine_species,Yale University,United States,,,,Yale University,,USA,,University,Science
 218,Marine_species,National University of Ireland Galway,Ireland,,,,National University of Ireland Galway,,Ireland,,University,Science
 219,Marine_species,"Museu de Ciències Naturals de Barcelona, Department of Palaeontology",Spain,,,,Museum of Natural Sciences of Barcelona - Department of Palaeontology,,Spain,,Museum,Science
@@ -228,27 +228,27 @@
 226,Marine_species,Cercle Geologique du Hainaut,France,,,,Cercle Geologique du Hainaut,,France,,Research institute,Science
 227,Marine_species,European Commission - DG SANTE,Belgium,,,,EU - European Commission -  DG SANTE (DG for Health and Food Safety),x,Europe,,EU institution,Policy
 228,Marine_species,University of British Columbia,Canada,,,,University of British Columbia,,Canada,,University,Science
-229,Marine_species,College of Marine Life Science Ocean University of China,China,,,,,,,,,
+229,Marine_species,College of Marine Life Science Ocean University of China,China,,,,Ocean University of China - College of Marine Life Sciences,,China,,University,Science
 230,Marine_species,Hellenic Centre for Marine Research,Greece,,,,HCMR (Hellenic Centre for Marine Research),,Greece,,Research institute,Science
 231,Marine_species,NOAA-NCEI,United States,,,,NOAA National Oceanic And Atmospheric Administration - NCEI National Centers for Environmental Information,,USA,,Governmental body,Policy
-232,Marine_species,Hopkins Marine Station,USA,,,,,,,,,
+232,Marine_species,Hopkins Marine Station,USA,,,,Stanford University - Hopkins Marine Station,,USA,,Research institute,Science
 233,Marine_species,Beijing Genomics Institute (BGI),China,,,,Beijing Genomics Institute (BGI),,China,,Company,Industry
 234,Marine_species,Northwest University,China,,,,Northwest University of China,,China,,University,Science
-235,Marine_species,Ocean Networks Canada,Canada,,,,,,,,,
+235,Marine_species,Ocean Networks Canada,Canada,,,,University of Victoria - Ocean Networks Canada,,Canada,,University,Science
 236,Marine_species,University of Southampton,United Kingdom,,,,University of Southampton,,UK,,University,Science
 237,Marine_species,Universiteit Gent,Belgium,,,,Ghent University,,Belgium,x,University,Science
 238,Marine_species,Murdoch University,Australia,,,,Murdoch University,x,Australia,,University,Science
 239,Marine_species,CEFAS,United Kingdom,,,,"CEFAS (Centre for Environment, Fisheries and Aquaculture Science)",,UK,,Research institute,Science
 240,Marine_species,Universidad de Murcia,Spain,,,,University of Murcia,,Spain,,University,Science
-241,Marine_species,Individual,Australia,,,,,,,,,
+241,Marine_species,Individual,Australia,,,,personal,,,,,
 242,Marine_species,University of Pretoria,South-Africa,,,,University of Florida,x,USA,,University,Science
-243,Marine_species,Executive Environmnet Agency,Bulgaria,,,,,,,,,
+243,Marine_species,Executive Environmnet Agency,Bulgaria,,,,Ministry of Environment and Water - Executive Environment Agency (ExEA),,Bulgaria,,Governmental body,Policy
 244,Marine_species,Yale University,United States,,,,Yale University,,USA,,University,Science
 245,Marine_species,Scottish Environment Protection Agency,United Kingdom,,,,US Environmental Protection Agency (US EPA),x,USA,,Governmental body,Policy
-246,Marine_species,Australian Antarctic Data Centre,Australia,,,,,,,,,
-247,Marine_species,Senckenberg Nature Research Society,Germany,,,,,,,,,
+246,Marine_species,Australian Antarctic Data Centre,Australia,,,,Australian Antarctic Data Centre,,Australia,,Data infrastructure,Science
+247,Marine_species,Senckenberg Nature Research Society,Germany,,,,Senckenberg Nature Research Society,,Germany,,research network,Science
 248,Marine_species,Victoria University of Wellington,New Zealand,,,,Victoria University of wellington,x,New Zealand,,University,Science
-249,Marine_species,Zoological Society of London,United Kingdom,,,,,,,,,
+249,Marine_species,Zoological Society of London,United Kingdom,,,,Zoological Society of London,,UK,,Non-profit organization,Policy
 250,Marine_species,Imperial College London,United Kingdom,,,,Imperial College London,,,,,
 251,Marine_species,University Hamburg; Zentrum für Bioinformatik,Germany,,,,University of Hamburg - Center for Bioinformatics,,Germany,,Research institute,Science
 252,Marine_species,"University of California,  Berkeley",United States,,,,"University of California, Berkeley",x,USA,,University,Science
@@ -259,14 +259,14 @@
 257,Marine_species,cefas,United Kingdom,,,,,,,,,
 258,Marine_species,Field Museum of Natural History,United States,,,,Swedish Museum of Natural History,x,Sweden,,Museum,Science
 259,Marine_species,Marine Institute Ireland,Ireland,,,,Marine Institute,x,Ireland,,Research institute,Science
-260,Marine_species,Senckenberg Research Institute and Natural History Museum,Germany,,,,,,,,,
+260,Marine_species,Senckenberg Research Institute and Natural History Museum,Germany,,,,Naturmuseum Senckenberg - Research Institute and Natural History Museum Frankfurt,,Germany,,Research institute,Science
 261,Marine_species,"Muséum national d'Histoire naturelle (MNHN), Paris",France,,,,MNHN National Museum of Natural History,x,France,,Museum,Science
-262,Marine_species,Barcode of Life Datasystem (BOLD) - Centre for Biodiversity Genomics (CBG) ,Canada,,,,,,,,,
+262,Marine_species,Barcode of Life Datasystem (BOLD) - Centre for Biodiversity Genomics (CBG) ,Canada,,,,Barcode of Life Data System (BOLDSystems),,Global,,Data infrastructure,Science
 263,Marine_species,Draper,United States,,,,Draper Inc. ,,USA,,Company,Industry
-264,Marine_species,European Bioinformatics Institute,UK,,,,,,,,,
-265,Marine_species,Eco Marine Consultants,United Kingdom,,,,,,,,,
+264,Marine_species,European Bioinformatics Institute,UK,,,,EMBL (European Molecular Biology Laboratory) - EBI (European Bioinformatics Institute),,Europe,,Research network,Science
+265,Marine_species,Eco Marine Consultants,United Kingdom,,,,Eco Marine Consultants,,UK,,Consultancy,Industry
 266,Marine_species,Station Biologique de Roscoff - CNRS - Sorbonne Université,France,,,,Station Biologique de Roscoff,,,,,
-267,Marine_species," R/V Atlantis, and R/V Mirai Cruises.Scripps Institution of Oceanography",USA,,,,,,,,,
+267,Marine_species," R/V Atlantis, and R/V Mirai Cruises.Scripps Institution of Oceanography",USA,,,,"University of California, San Diego (UCSD) - Scripps Institution of Oceanography",,USA,,Research institute,Science
 268,Marine_species,"Canadian National Collection of Insects,  Arachnids & Nematodes",Canada,,,,"Ottawa Research and Development Centre - Canadian National Collection of Insects, Arachnids & Nematodes",x,Canada,,Research institute,Science
 269,Marine_species,Haus der Natur Salzburg,Austria,,,,Haus der Natur Salzburg,,Austria,,Museum,Science
 270,Marine_species,Natural History Museum Rotterdam,Netherlands,,,,Natural History Museum Rotterdam (NMR),x,Netherlands,,Museum,Science
@@ -278,90 +278,90 @@
 276,Marine_species,Dalhousie Univeristy,Canada,,,,Dalhousie University,x,Canada,,University,Science
 277,Marine_species,"Biodiversity Research Center, Academia Sinica",Taiwan (Province of China),,,,Academia Sinica - Biodiversity Research Centre,,Taiwan,,Research institute,Science
 278,Marine_species,,USA,,,,,,,,,
-279,Marine_species,"Add-my-Pet portal ,  Vrije Universiteit van Amsterdam",Netherlands,,,,,,,,,
+279,Marine_species,"Add-my-Pet portal ,  Vrije Universiteit van Amsterdam",Netherlands,,,,Add-my-Pet (AmP) ,x,Netherlands,,Data infrastructure,Science
 280,Marine_species,"Archaeology and Natural History,  The Australian National University",Australia,,,,Australian National University - Archaeology and Natural History,x,Australia,,University,Science
-281,Marine_species,"Base pour l'Inventaire des Observations Subaquatiques (BioObs), ",France,,,,,,,,,
-282,Marine_species,"Biodata Mining Group,  Bielefeld University",Germany,,,,,,,,,
-283,Marine_species,"Biodiversity Virtual e-Laboratory (BioVeL) Project,  Cardiff University",UK,,,,,,,,,
-284,Marine_species,"Biological Information System for Marine Life (BISMaL), ",Japan,,,,,,,,,
-285,Marine_species,"BlueBRIDGE,  Italian National Research Council",Italy,,,,,,,,,
+281,Marine_species,"Base pour l'Inventaire des Observations Subaquatiques (BioObs), ",France,,,,BioObs (Base pour l'inventaire des observations subaquatiques),,France,,Data infrastructure,Science
+282,Marine_species,"Biodata Mining Group,  Bielefeld University",Germany,,,,Bielefeld University - Biodata Mining Group,,,,,
+283,Marine_species,"Biodiversity Virtual e-Laboratory (BioVeL) Project,  Cardiff University",UK,,,,Cardiff University,,UK,,University,Science
+284,Marine_species,"Biological Information System for Marine Life (BISMaL), ",Japan,,,,JAMSTEC (Japan Agency for Marine-Earth Science and Technology) - Biological Information System for Marine Life (BISMaL),,Japan,,Data infrastructure,Science
+285,Marine_species,"BlueBRIDGE,  Italian National Research Council",Italy,,,,BlueBRIDGE,x,New Zealand,,Consultancy,Industry
 286,Marine_species,"British Oceanographic Data Centre (BODC), ",UK,,,,British Oceanographic Data Centre (BODC),x,UK,,Data infrastructure,Science
-287,Marine_species,"Check the current taxonomic classification benthic surveys samples,  Centre for Environment, Fisheries and Aquaculture Science",UK,,,,,,,,,
+287,Marine_species,"Check the current taxonomic classification benthic surveys samples,  Centre for Environment, Fisheries and Aquaculture Science",UK,,,,"CEFAS (Centre for Environment, Fisheries and Aquaculture Science)",x,UK,,Research institute,Science
 288,Marine_species,"Circolo Attività Subacquee Chieri,  Sezione Didattica",Italy,,,,Chieri Underwater Activities Club,x,Italy,,Other,Civil society
-289,Marine_species,"Citizen Science non profit group opistobranquis.info ,  VIMAR - Vida Marina ",Spain,,,,,,,,,
-290,Marine_species,"Coral Reef Ecosystem Division (CRED),  NOAA",USA,,,,,,,,,
-291,Marine_species,"CRITTERBASE project,  Alfred Wegener Institute for Polar- and Marine Research",Germany,,,,,,,,,
-292,Marine_species,"DAERA.Marine taxon application (new version of UNICORN) ,  The Department of Agriculture, Environment and Rural Affairs",UK,,,,,,,,,
-293,Marine_species,"Data Publisher for Earth & Environmental Science (PANGAEA) ,  Centre for Marine Environmental Sciences",Germany,,,,,,,,,
+289,Marine_species,"Citizen Science non profit group opistobranquis.info ,  VIMAR - Vida Marina ",Spain,,,,VIMAR (Vida Marina),x,,,,
+290,Marine_species,"Coral Reef Ecosystem Division (CRED),  NOAA",USA,,,,NOAA National Oceanic And Atmospheric Administration - Coral Reef Ecosystem Division (CRED),,,,,
+291,Marine_species,"CRITTERBASE project,  Alfred Wegener Institute for Polar- and Marine Research",Germany,,,,CRITTERBASE,x,Germany,,Data infrastructure,Science
+292,Marine_species,"DAERA.Marine taxon application (new version of UNICORN) ,  The Department of Agriculture, Environment and Rural Affairs",UK,,,,"Northern Ireland Executive - Department of Agriculture, Environment and Rural Affairs (DAERA)",x,UK,,Governmental body,Policy
+293,Marine_species,"Data Publisher for Earth & Environmental Science (PANGAEA) ,  Centre for Marine Environmental Sciences",Germany,,,,PANGAEA,x,Germany,,Data infrastructure,Science
 294,Marine_species,"Department of Marine Sciences,  University of the Aegean",Greece,,,,University of the Aegean - Department of Marine Sciences,x,Greece,,University,Science
-295,Marine_species,"Données d'Observations pour la Reconnaissance et l'Identification de la faune et de la flore Subaquatique (DORIS), ",France,,,,,,,,,
-296,Marine_species,"Ecopath with Ecosim (EwE),  University of British Columbia",Canada,,,,,,,,,
+295,Marine_species,"Données d'Observations pour la Reconnaissance et l'Identification de la faune et de la flore Subaquatique (DORIS), ",France,,,,Données d'Observations pour la Reconnaissance et l'Identification de la faune et la flore Subaquatiques (DORIS),x,France,,Data infrastructure,Science
+296,Marine_species,"Ecopath with Ecosim (EwE),  University of British Columbia",Canada,,,,University of British Columbia - Ecopath with Ecosim (EwE),,,,,
 297,Marine_species,"Ecospan Environmental Limited, ",UK,,,,Ecospan Environmental Limited,x,UK,,Company,Industry
 298,Marine_species,"EMODNet Portal for Biology, ",EU,,,,EMODNet (European Marine Observation and Data Network) - Biology,x,Europe,,Data infrastructure,Science
-299,Marine_species,"Encyclopedia of Life,  Smithsonian Institution",USA,,,,,,,,,
-300,Marine_species,"Environmental Information Management (EIM) database,  Washington State Department of Ecology",USA,,,,,,,,,
+299,Marine_species,"Encyclopedia of Life,  Smithsonian Institution",USA,,,,Smithsonian Institution - Smithsonian National Museum of Natural History - Encyclopedia of Life (EOL),x,USA,,Data infrastructure,Science
+300,Marine_species,"Environmental Information Management (EIM) database,  Washington State Department of Ecology",USA,,,,Washington State Department of Ecology - Environmental Information Management (EIM) database,,USA,,Data infrastructure,Science
 301,Marine_species,"ETI BioInformatics, ",Netherlands,,,,ETI BioInformatics,x,Netherlands,,Company,Industry
 302,Marine_species,"European Environment Agency,  EUNIS",Denmark,,,,EU - European Environmental Agency - EUNIS (European Nature Information System),x,Europe,,Data infrastructure,Science
 303,Marine_species,"Fisheries Linked Open Data at the Fisheries and Aquaculture Department of FAO, ",Italy,,,,FAO (Food and Agriculture Organization of the United Nations) - Fisheries and Aquaculture Department - Fisheries Linked Open Data (FLOD),x,,,,
-304,Marine_species,"Foraminifera.eu Project, ",Germany,,,,,,,,,
+304,Marine_species,"Foraminifera.eu Project, ",Germany,,,,Foraminifera.eu,,Europe,,Creative body,Science
 305,Marine_species,"Gaiaguide, ",Australia,,,,,,,,,
 306,Marine_species,"Gardline Marine Sciences group, ",UK,,,,Gardline Group - Marine Sciences group,x,Global,,Company,Industry
 307,Marine_species,"GenBank,  National Center for Biotechnology Information (NCBI)",USA,,,,National Center for Biotechnology Information (NCBI),x,USA,,Data infrastructure,Science
-308,Marine_species,"Global Biotic Interactions (GloBI), ",Oakland,,,,,,,,,
+308,Marine_species,"Global Biotic Interactions (GloBI), ",Oakland,,,,Global Biotic Interactions (GloBI),,,,,
 309,Marine_species,"Global Genome Initiative,  Smithsonian Institution",US,,,,Smithsonian Institution - Smithsonian National Museum of Natural History - Global Genome Initiative (GGI),x,USA,,Museum,Science
 310,Marine_species,"Hafok, ",Sweden,,,,Hafok AB,x,Sweden,,Consultancy,Industry
-311,Marine_species,"Harbor Branch Oceanographic Institute,  Florida Atlantic University",USA,,,,,,,,,
+311,Marine_species,"Harbor Branch Oceanographic Institute,  Florida Atlantic University",USA,,,,Florida Atlantic University - Harbor Branch Oceanographic Institute,,USA,,Research institute,Science
 312,Marine_species,"HELCOM,  Helsinki",Finland,,,,HELCOM (Helsinki Convention on the Protection of the Marine Environment of the Baltic Sea Area),x,Finland,,Governmental body,Policy
 313,Marine_species,"Ifremer,  Laboratoire des sciences de l’Environnement MARin (LEMAR)",France,,,,IFREMER Institut Français de Recherche pour l'Exploitation de la Mer - Laboratoire des sciences de l’Environnement MARin (LEMAR),x,,,,
-314,Marine_species,"iMarine Project, ",Europe,,,,,,,,,
+314,Marine_species,"iMarine Project, ",Europe,,,,iMarine,,Europe,,Data infrastructure,Science
 315,Marine_species,"iNaturalist ,  California Academy of Sciences",USA,,,,California Academy of Sciences,x,USA,,University,Science
-316,Marine_species,"Information about non domestic animals keeping ,  Base de Données des Espèces Non Domestiques (BDEND)",France,,,,,,,,,
-317,Marine_species,"Information system on Aquatic Non-Indigenous and Cryptogenic Species (AquaNIS), ",Lithuania,,,,,,,,,
+316,Marine_species,"Information about non domestic animals keeping ,  Base de Données des Espèces Non Domestiques (BDEND)",France,,,,Bases de données des espèces non-domestiques (BDEND),x,France,,Data infrastructure,Science
+317,Marine_species,"Information system on Aquatic Non-Indigenous and Cryptogenic Species (AquaNIS), ",Lithuania,,,,Information system on Aquatic Non-Indigenous and Cryptogenic Species (AquaNIS),,Global,,Data infrastructure,Science
 318,Marine_species,"Institut de Recherche pour le Développement (IRD),  Centre de Recherche Halieutique Méditerranéenne et Tropicale",France,,,,IRD L'Institut de recherche pour le développement - Centre de Recherche Halieutique Méditerranéenne et Tropicale,x,France,,Research institute,Science
 319,Marine_species,"Institut National de Recherche Halieutique (INRH), ",Morocco,,,,Institut National de Recherche Halieutique (INRH),x,Morocco,,Research institute,Science
 320,Marine_species,"International Institute for Species Exploration, ",USA,,,,International Institute for Species Exploration,x,,,,
-321,Marine_species,"keep abreast with changes in the taxonomy,  Institute for Marine Resources and Ecosystem Studies",Netherlands,,,,,,,,,
-322,Marine_species,"Keep the nomenclature up-to-date,  Natural History Collections of Tyrolean State Museum Ferdinandeum",Austria,,,,,,,,,
+321,Marine_species,"keep abreast with changes in the taxonomy,  Institute for Marine Resources and Ecosystem Studies",Netherlands,,,,IMARES - Wageningen Marine Research (WUR),x,,,,
+322,Marine_species,"Keep the nomenclature up-to-date,  Natural History Collections of Tyrolean State Museum Ferdinandeum",Austria,,,,Natural History Collections of Tyrolean State Museum Ferdinandeum,,Austria,,Museum,Science
 323,Marine_species,"L’Agence des aires marines protégées, ",France,,,,L’Agence des aires marines protégées,x,France,,Governmental body,Policy
 324,Marine_species,"MariLim Gesellschaft für Gewässeruntersuchung mbH, ",Germany,,,,MariLim GmbH,x,Germany,,Consultancy,Industry
 325,Marine_species,"Marine Life Information Network (MarLIN), ",UK,,,,MarLIN (Marine Life Information Network),x,UK,,Data infrastructure,Science
 326,Marine_species,"Marine Research Lab,  Zoological Institute RAS",Russia,,,,"Russian Academy of Sciences (RAS) - Zoological Institute, Marine Research Lab",x,Russia,,Research institute,Science
-327,Marine_species,"Marine Resource Modelling Group,  University of Strathclyde Dept. Mathematics and Statistics",UK,,,,,,,,,
+327,Marine_species,"Marine Resource Modelling Group,  University of Strathclyde Dept. Mathematics and Statistics",UK,,,,University of Strathclyde - Department of Mathematics and Statistics - Marine Resource Modelling Group,,UK,,University,Science
 328,Marine_species,"Maurice Lamontagne Institute,  Fisheries and Oceans",Canada,,,,Government of Canada - Fisheries and Oceans Canada - Maurice Lamontagne Institute,x,Canada,,Research institute,Science
-329,Marine_species,"Mikrotax.org - pforams,  University College London",UK,,,,,,,,,
-330,Marine_species,"MIT Sea Grant College Program, ",USA,,,,,,,,,
+329,Marine_species,"Mikrotax.org - pforams,  University College London",UK,,,,University College London,,UK,,University,Science
+330,Marine_species,"MIT Sea Grant College Program, ",USA,,,,Massachusetts Institute of Technology (MIT) - Sea Grant College Program,,USA,,Data infrastructure,Science
 331,Marine_species,"National Academy of Sciences of Ukraine,  Institute of Biology of the Southern Seas (IBSS)",Ukraine,,,,National Academy of Sciences of Ukraine (NASU) - AO Kovalevsky Institute of Biology of the Southern Seas (IBSS),x,Ukraine,,Research institute,Science
-332,Marine_species,"National benthic database,  University of Bordeaux",France,,,,,,,,,
-333,Marine_species,"Nationalpark-Verwaltung Niedersächsisches Wattenmeer,  Wilhelmshaven",Germany,,,,,,,,,
+332,Marine_species,"National benthic database,  University of Bordeaux",France,,,,University of Bordeaux - National benthic database,,France,,Data infrastructure,Science
+333,Marine_species,"Nationalpark-Verwaltung Niedersächsisches Wattenmeer,  Wilhelmshaven",Germany,,,,Nationalpark Niedersächsisches Wattenmeer,x,Germany,,Other public authorities,Policy
 334,Marine_species,"Natura Esperire/Experience Annalisa Tassini, ",Italy,,,,Natura Esperire/Experience Annalisa Tassini,x,Italy,,Other,Civil society
 335,Marine_species,"Natural History Museum of Los Angeles County, ",USA,,,,NHM Natural History Museum of Los Angeles County,x,USA,,Museum,Science
 336,Marine_species,"Natural History Museum Rotterdam,  Marine Invertebrates",Netherlands,,,,Natural History Museum Rotterdam (NMR) - Marine Invertebrates,x,Netherlands,,Museum,Science
-337,Marine_species,"Observation.org, ",Netherlands,,,,,,,,,
-338,Marine_species,"Opale Surfcasting, ",France,,,,,,,,,
-339,Marine_species,"Open Tree of Life, ",USA,,,,,,,,,
-340,Marine_species,"PAPARA(ZZ)I Annotation tool,  Alfred Wegener Institute",Germany,,,,,,,,,
-341,Marine_species,"Pelagos & Assemble databases,  Station Biologique de Roscoff",France,,,,,,,,,
-342,Marine_species,"PhD on taxonomy of cyclopoida,  University of Baghdad",Iraq,,,,,,,,,
-343,Marine_species,"Referred to webservices - WoRMS data (through the Lifewatch Species Information Backbon) will be used for updating taxon names in the internal databases of the Cawthron Institute,  Cawthron Institute",New Zealand,,,,,,,,,
-344,Marine_species,"Resolve common names for Central & Northern California Ocean Observing System (CeNCOOS) ,  Research Institute",USA,,,,,,,,,
-345,Marine_species,"Russell Renka - Shell List,  Southeast Missouri State University",USA,,,,,,,,,
+337,Marine_species,"Observation.org, ",Netherlands,,,,"Observation.org, ",,Global,,Data infrastructure,Science
+338,Marine_species,"Opale Surfcasting, ",France,,,,Opale Surfcasting,,Global,,Creative body,Civil society
+339,Marine_species,"Open Tree of Life, ",USA,,,,Open Tree of Life,,Global,,Data infrastructure,Science
+340,Marine_species,"PAPARA(ZZ)I Annotation tool,  Alfred Wegener Institute",Germany,,,,Alfred Wegener Institute for Polar and Marine Research (AWI) - PAPARA(ZZ)I Annotation tool,,Germany,,Data infrastructure,Science
+341,Marine_species,"Pelagos & Assemble databases,  Station Biologique de Roscoff",France,,,,Station Biologique de Roscoff,,,,,
+342,Marine_species,"PhD on taxonomy of cyclopoida,  University of Baghdad",Iraq,,,,University of Baghdad,,Iraq,,University,Science
+343,Marine_species,"Referred to webservices - WoRMS data (through the Lifewatch Species Information Backbon) will be used for updating taxon names in the internal databases of the Cawthron Institute,  Cawthron Institute",New Zealand,,,,Cawthron Institute,,New Zealand,,Research institute,Science
+344,Marine_species,"Resolve common names for Central & Northern California Ocean Observing System (CeNCOOS) ,  Research Institute",USA,,,,Central and Northern California Ocean Observing System (CeNCOOS),x,USA,,Data infrastructure,Science
+345,Marine_species,"Russell Renka - Shell List,  Southeast Missouri State University",USA,,,,Southeast Missouri State University,,USA,,University,Science
 346,Marine_species,"San Diego Supercomputer Center, ",USA,,,,"University of California, San Diego (UCSD) - San Diego Supercomputer Center",x,USA,,Research institute,Science
 347,Marine_species,"School of Computer Science,  University of Manchester",UK,,,,University of Manchester - School of Computer Science,x,UK,,University,Science
 348,Marine_species,"Scratchpads,  Natural History Museum (NHM)",UK,,,,NHM (Natural History Museum),x,UK,,Museum,Science
-349,Marine_species,"SeaDataNet,  IMARES Wageningen UR",Netherlands,,,,,,,,,
-350,Marine_species,"Specimen seashells,  Conchology Inc.",Philippines,,,,,,,,,
-351,Marine_species,"Sponge Barcoding Project, ",Germany,,,,,,,,,
-352,Marine_species,"strandvondsten.nl,  Utrecht",The Netherlands,,,,,,,,,
+349,Marine_species,"SeaDataNet,  IMARES Wageningen UR",Netherlands,,,,IMARES - Wageningen Marine Research (WUR),,,,,
+350,Marine_species,"Specimen seashells,  Conchology Inc.",Philippines,,,,Conchology Inc.,,Phillipines,,Company,Industry
+351,Marine_species,"Sponge Barcoding Project, ",Germany,,,,Sponge Barcoding Project (SBP),,Global,,Data infrastructure,Science
+352,Marine_species,"strandvondsten.nl,  Utrecht",The Netherlands,,,,strandvondsten.nl,,Netherlands,,Non-profit organization,Civil society
 353,Marine_species,"Taxonome,  University of Sheffield",UK,,,,University of Sheffield,x,UK,,University,Science
-354,Marine_species,"Taxonomical reference for encoders using the RBINS-collection database ,  Operationele Directie Natuurlijk Milieu",Belgium,,,,,,,,,
-355,Marine_species,"The Crab Database (crabdatabase.info), ",Czech Republic,,,,,,,,,
+354,Marine_species,"Taxonomical reference for encoders using the RBINS-collection database ,  Operationele Directie Natuurlijk Milieu",Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS) - Directorate Natural Environment (OD Nature),x,,,,
+355,Marine_species,"The Crab Database (crabdatabase.info), ",Czech Republic,,,,crabdatabase.info,,Global,,Data infrastructure,Science
 356,Marine_species,"The United States Antarctic Program at the National Museum of Natural History, ",USA,,,,National Museum of Natural History - US Antarctic Program,x,USA,,Museum,Science
-357,Marine_species,"Unified Taxonomic Information Service (UTIS) ,  Botanic Garden and Botanical Museum Berlin-Dahlem",Germany,,,,,,,,,
+357,Marine_species,"Unified Taxonomic Information Service (UTIS) ,  Botanic Garden and Botanical Museum Berlin-Dahlem",Germany,,,,Unified Taxonomic Information Service (UTIS),x,Europe,,Data infrastructure,Science
 358,Marine_species,"Update taxonomy ,  Diving Canary Islands",Spain,,,,,,,,,
 359,Marine_species,"Validate taxonomy of their marine species,  Government Department of Conservation Services",Bermuda,,,,,,,,,
-360,Marine_species,"Wikipedia FR, ",France,,,,,,,,,
-361,Marine_species,"WikiProject on Gastropods. ,  Wikipedia",United States,,,,,,,,,
-362,Marine_species,"WoRMS data will be used as taxonomic backbone for a collection of underwater photos - uses webservices,  Personal application",France,,,,,,,,,
+360,Marine_species,"Wikipedia FR, ",France,,,,Wikipedia,,Global,,Data infrastructure,Science
+361,Marine_species,"WikiProject on Gastropods. ,  Wikipedia",United States,,,,Wikipedia,x,Global,,Data infrastructure,Science
+362,Marine_species,"WoRMS data will be used as taxonomic backbone for a collection of underwater photos - uses webservices,  Personal application",France,,,,personal,,,,,
 363,Marine_regions,Global Fishing Watch,Global,,,,Global Fishing Watch,,Global,,Data infrastructure,Science
 364,Marine_regions,Donut holes in international waters,Global,,,,Donut holes in international waters,,Global,,Data infrastructure,Science
 365,Marine_regions,Ocean Health Index,Global,,,,Ocean Health Index,,Global,,Other,Civil society
@@ -394,14 +394,14 @@
 392,Marine_regions,GOV.UK,UK,,,,UK government,,UK,,Governmental body,Policy
 393,Marine_regions,?,,,,,,,,,,
 394,Marine_regions,European Union - Joint Research Centre,Europe,,,,EU - European Commission - Joint Research Centre,,Europe,,Research institute,Science
-395,Marine_regions,personal github repository,,,,,,,,,,
+395,Marine_regions,personal github repository,,,,,personal,,,,,
 396,Marine_regions,The BOBLME MPA Atlas,Global,,,,The BOBLME MPA Atlas,,Global,,Data infrastructure,Science
 397,Marine_regions,GEO BON,Germany,,,,GEO BON (Group on Earth Observations Biodiversity Observation Network),,Germany,,Data infrastructure,Science
-398,Marine_regions,Open Street Map Foundation,UK,,,,,,,,,
+398,Marine_regions,Open Street Map Foundation,UK,,,,Open Street Map Foundation,,Global,,Data infrastructure,Science
 399,Marine_regions,ILVO,Belgium,,,,"ILVO Flanders Research Institute for Agriculture, Fisheries and Food",,Belgium,x,Research institute,Science
-400,Marine_regions,International Atomic Energy Agency (IAEA),Austria,,,,,,,,,
-401,Marine_regions,S&P Global Inc.,USA,,,,,,,,,
-402,Marine_regions,International Council on Clean Transportation,Global,,,,,,,,,
+400,Marine_regions,International Atomic Energy Agency (IAEA),Austria,,,,International Atomic Energy Agency (IAEA),,Global,,Intergovernmental body,Policy
+401,Marine_regions,S&P Global Inc.,USA,,,,S&P Global Inc.,,USA,,Company,Policy
+402,Marine_regions,International Council on Clean Transportation,Global,,,,International Council on Clean Transportation (ICCT),,Global,,Non-profit organization,Civil society
 403,Marine_regions,Oceana,Global,,,,Oceana,,Spain,,Non-profit organization,Civil society
 404,Marine_regions,Akvaplan-niva,Norway,,,,Akvaplan Niva,,Norway,,Consultancy,Industry
 405,Marine_regions,Australian Antarctic Division,Australia,,,,Australian Government - Department of the Environment and Energy - Australian Antarctic Division (AAD),,Australia,,Research Institute,Science
@@ -411,14 +411,14 @@
 409,Marine_regions,Bangor University,UK,,,,Bangor University,,UK,,University,Science
 410,Marine_regions,Cardiff University,UK,,,,Cardiff University,,UK,,University,Science
 411,Marine_regions,CEFAS,UK,,,,"CEFAS (Centre for Environment, Fisheries and Aquaculture Science)",,UK,,Research institute,Science
-412,Marine_regions,CRIMARIO2,Europe,,,,,,,,,
+412,Marine_regions,CRIMARIO2,Europe,,,,CRIMARIO,,Europe,,Intergovernmental body,Policy
 413,Marine_regions,CSIRO,Australia,,,,CSIRO (Commonwealth Scientific and Industrial Research Organisation),,Australia,,Governmental body,Policy
 414,Marine_regions,CNRS,France,,,,CNRS,,France,,Research institute,Science
 415,Marine_regions,Columbia University,USA,,,,Columbia University,,USA,,University,Science
 416,Marine_regions,Dalhousie University,Canada,,,,Dalhousie University,,Canada,,University,Science
 417,Marine_regions,DHI,Global,,,,DHI Group,,,,,
 418,Marine_regions,Duke University,USA,,,,Duke University,,USA,,University,Science
-419,Marine_regions,EarthScope-Oceans,Global,,,,,,,,,
+419,Marine_regions,EarthScope-Oceans,Global,,,,EarthScope-Oceans,,Global,,research network,Science
 420,Marine_regions,Free University of Brussels,Belgium,,,,Free University of Brussels (VUB),,Belgium,o,University,Science
 421,Marine_regions,Fort Lewis College,USA,,,,Fort Lewis College,,USA,,University,Science
 422,Marine_regions,Ghent University,Belgium,,,,Ghent University,,Belgium,x,University,Science
@@ -438,7 +438,7 @@
 436,Marine_regions,Pacific Community,Global,,,,Pacific Community,,Global,,Intergovernmental body,Policy
 437,Marine_regions,Plymouth Marine Laboratory,UK,,,,PML (Plymouth Marine Laboratory),,,,,
 438,Marine_regions,Project Drawdown,USA,,,,,,,,,
-439,Marine_regions,Royal United Services Institute for Defence and Security Studies,UK,,,,,,,,,
+439,Marine_regions,Royal United Services Institute for Defence and Security Studies,UK,,,,Royal United Services Institute (RUSI),,UK,,Governmental body,Policy
 440,Marine_regions,Scripps Institution of Oceanography,USA,,,,"University of California, San Diego (UCSD) - Scripps Institution of Oceanography",,USA,,Research institute,Science
 441,Marine_regions,Universidad Nacional Autónoma de México,Mexico,,,,National Autonomous University of Mexico (UNAM),,Mexico,,University,Science
 442,Marine_regions,University of Delaware,USA,,,,University of Delaware,,USA,,University,Science
@@ -452,9 +452,9 @@
 450,Marine_regions,Armada Española,Spain,,,,Spanish navy,,Spain,,Other public authorities,Policy
 451,Marine_regions,British Antarctic Survey,UK,,,,British Antarctic Survey (BAS),,,,,
 452,Marine_regions,Canadian Coast Guard,Canada,,,,Canadian Coast Guard,,Canada,,Other public authorities,Policy
-453,Marine_regions,Danish Defence Intelligence Service,Denmark,,,,,,,,,
-454,Marine_regions,"Department of Agriculture, Forestry and Fisheries South Africa",South Africa,,,,,,,,,
-455,Marine_regions,European Maritime Safety Agency,Europe,,,,,,,,,
+453,Marine_regions,Danish Defence Intelligence Service,Denmark,,,,Danish Defence Intelligence Service,,Denmark,,Governmental body,Policy
+454,Marine_regions,"Department of Agriculture, Forestry and Fisheries South Africa",South Africa,,,,"South African government - Department of Agriculture, Forestry and Fisheries",,South Africa,,Governmental body,Policy
+455,Marine_regions,European Maritime Safety Agency,Europe,,,,European Maritime Safety Agency,,Europe,,Governmental body,Policy
 456,Marine_regions,Eurostat-GISCO,Europe,,,,EU - European Commission - GISCO (Geographic Information System of the Commission),,Europe,,Data infrastructure,Science
 457,Marine_regions,US Fleet Forces Command,USA,,,,US Fleet Forces Command,,USA,,Other public authorities,Policy
 458,Marine_regions,Fisheries and Oceans Canada,Canada,,,,Government of Canada - Fisheries and Oceans Canada,,Canada,,Governmental body,Policy
@@ -462,20 +462,20 @@
 460,Marine_regions,European Environmental Agency,Europe,,,,EU - European Environmental Agency,,Europe,,EU institution,Policy
 461,Marine_regions,FAO Fisheries and aquaculture department,Global,,,,FAO (Food and Agriculture Organization of the United Nations) - Fisheries and aquaculture department,,Global,,UN organization,Policy
 462,Marine_regions,Geoscience Australia,Australia,,,,Australian government - Geoscience Australia,,,,,
-463,Marine_regions,Italian Navy Hydrographic Institute,Italy,,,,,,,,,
+463,Marine_regions,Italian Navy Hydrographic Institute,Italy,,,,Italian Navy - Hydrographic Institute,,Italy,,Governmental body,Policy
 464,Marine_regions,UNEP/GRID-Arendal,Global,,,,UNEP (UN Environment Programme) - GRID-Arendal,,Global,,UN organization,Policy
 465,Marine_regions,International Astronautical Federation,Global,,,,International Astronautical Federation,,,,,
-466,Marine_regions,Korean Fisheries Monitoring Center,South Korea,,,,,,,,,
+466,Marine_regions,Korean Fisheries Monitoring Center,South Korea,,,,Korean government - Ministry of Oceans and Fisheries - Fisheries Monitoring Center (FMC),,South Korea,,Governmental body,Policy
 467,Marine_regions,Ministry of Foreign Affairs - Hellinic Republic,Greece,,,,Greece government - Hellinic Ministry of Foreign Affairs,,Greece,,Governmental body,Policy
 468,Marine_regions,National Oceanic and Atmospheric Administration,USA,,,,NOAA National Oceanic And Atmospheric Administration,,USA,,Governmental body,Policy
 469,Marine_regions,National Renewable Energy Laboratory,USA,,,,National Renewable Energy Laboratory,,USA,,Research institute,Science
-470,Marine_regions,Pacific Islands Forum Fisheries Agency,Global,,,,,,,,,
+470,Marine_regions,Pacific Islands Forum Fisheries Agency,Global,,,,Pacific Islands Forum Fisheries Agency,,Global,,Intergovernmental body,Policy
 471,Marine_regions,Space and Naval Warfare Systems Command,USA,,,,Space and Naval Warfare Systems Command,,USA,,Defence,Policy
 472,Marine_regions,Swedish Agency for Marine and Water Management,Sweden,,,,Swedish Agency for Marine and Water Management,,Sweden,,Governmental body,Policy
-473,Marine_regions,UK Space Agency,UK,,,,,,,,,
+473,Marine_regions,UK Space Agency,UK,,,,UK Space Agency,,UK,,Research institute,Science
 474,Marine_regions,UNEP-WCMC,Global,,,,UNEP-WCMC (UN Environment Programme World Conservation Monitoring Centre),,Global,,UN organization,Policy
 475,Marine_regions,US Coast Guard,USA,,,,US Coast Guard,,USA,,Other public authorities,Policy
-476,Marine_regions,US Department of Veterans Affairs,USA,,,,,,,,,
+476,Marine_regions,US Department of Veterans Affairs,USA,,,,US Department of Veterans Affairs,,USA,,Governmental body,Policy
 477,Marine_regions,US Fleet Forces Command,USA,,,,US Fleet Forces Command,,USA,,Other public authorities,Policy
 478,Marine_regions,International Seabed Authority,Global,,,,ISA International Seabed Authority,,,,,
 479,Marine_regions,4C Offshore Ltd.,UK,,,,4C Offshore Ltd.,,UK,,Company,Industry
@@ -487,7 +487,7 @@
 485,Marine_regions,Applied Science Associates,USA,,,,Applied Science Associates,,USA,,Company,Industry
 486,Marine_regions,Bakri Navigation Company Limited,Saudi Arabia,,,,Bakri Navigation Company Limited,,Saudi Arabia,,Company,Industry
 487,Marine_regions,BarrowsCo,USA,,,,BarrowsCo,,USA,,Company,Industry
-488,Marine_regions,Belgian Offshore Platform,Belgium,,,,,,,,,
+488,Marine_regions,Belgian Offshore Platform,Belgium,,,,Belgian Offshore Platform,,Belgium,,Non-profit organization,Civil society
 489,Marine_regions,BHP,Global,,,,BHP,,Global,,Company,Industry
 490,Marine_regions,CGG,,,,,,,,,,
 491,Marine_regions,CLS,France,,,,,,,,,
@@ -497,30 +497,30 @@
 495,Marine_regions,ESRI,USA,,,,ESRI,,USA,,Company,Industry
 496,Marine_regions,ExxonMobil,USA,,,,ExxonMobil,,USA,,Company,Industry
 497,Marine_regions,FM Global,Global,,,,FM Global,,Global,,Company,Industry
-498,Marine_regions,IHS Markit,Global,,,,,,,,,
+498,Marine_regions,IHS Markit,Global,,,,IHS Markit,,UK,,Company,Industry
 499,Marine_regions,Jan De Nul,Global,,,,Jan De Nul Group,,Belgium,x,Company,Industry
 500,Marine_regions,Lighthouse,Global,,,,,,,,,
 501,Marine_regions,MAAS,Netherlands,,,,,,,,,
 502,Marine_regions,Wood,Global,,,,Wood Group,,Global,,Company,Industry
 503,Marine_regions,Verisk Maplecroft,Global,,,,Verisk Maplecroft,,Global,,Consultancy,Industry
 504,Marine_regions,MDA,,,,,,,,,,
-505,Marine_regions,Seas of Solutions,Europe,,,,,,,,,
-506,Marine_regions,Nautoshark,UK,,,,,,,,,
-507,Marine_regions,NKT,Global,,,,,,,,,
-508,Marine_regions,OMV Group,Global,,,,,,,,,
+505,Marine_regions,Seas of Solutions,Europe,,,,Seas of Solutions,,Netherlands,,Company,Industry
+506,Marine_regions,Nautoshark,UK,,,,Nautoshark,,UK,,Company,Industry
+507,Marine_regions,NKT,Global,,,,NKT,,Denmark,,Company,Industry
+508,Marine_regions,OMV Group,Global,,,,OMV Group,,Austria,,Company,Industry
 509,Marine_regions,Oralia Maritime,,,,,,,,,,
 510,Marine_regions,Ophir,,,,,,,,,,
 511,Marine_regions,PacNet,Global,,,,PacNet,,Global,,Company,Industry
 512,Marine_regions,Pelagian,,,,,,,,,,
-513,Marine_regions,PWC,Global,,,,,,,,,
+513,Marine_regions,PWC,Global,,,,PWC,,UK,,Company,Industry
 514,Marine_regions,Primeval Treks,,,,,,,,,,
 515,Marine_regions,Ramboll,Denmark,,,,Ramboll,,Denmark,,Consultancy,Industry
 516,Marine_regions,SAIC,China,,,,SAIC Motor,,China,,Company,Industry
-517,Marine_regions,ScanReach,Norway,,,,,,,,,
+517,Marine_regions,ScanReach,Norway,,,,ScanReach,,Norway,,Company,Industry
 518,Marine_regions,Shell,Global,,,,Shell,,Global,,Company,Industry
-519,Marine_regions,Telstra,Australia,,,,,,,,,
+519,Marine_regions,Telstra,Australia,,,,Telstra,,Australia,,Company,Industry
 520,Marine_regions,SAGA,UK,,,,,,,,,
-521,Marine_regions,Vickers Nolan Enterprises,USA,,,,,,,,,
+521,Marine_regions,Vickers Nolan Enterprises,USA,,,,"Vickers & Nolan Enterprises, LLC (VNE)",,USA,,Company,Industry
 522,Marine_regions,Voyager,Global,,,,,,,,,
 523,Marine_regions,Equinor,Global,,,,Equinor,,Norway,,Company,Industry
 524,Marine_regions,American Bird Conservancy,USA,,,,American Bird Conservancy,,USA,,Non-profit organization,Civil society
@@ -533,63 +533,63 @@
 531,Marine_regions,Oceana,Global,,,,Oceana,,Spain,,Non-profit organization,Civil society
 532,Marine_regions,WorldFish,Global,,,,WorldFish,,Global,,Non-profit organization,Civil society
 533,Marine_regions,WWF,Global,,,,WWF,,Global,,Non-profit organization,Civil society
-534,Marine_regions,Bloomberg,Global,,,,,,,,,
-535,Marine_regions,Reuters,Global,,,,,,,,,
-536,Marine_regions,The New York Times,USA,,,,,,,,,
-537,Mailing_List,personal emailadres,,,,,,,,,,
+534,Marine_regions,Bloomberg,Global,,,,Bloomberg,,USA,,Creative body,Civil society
+535,Marine_regions,Reuters,Global,,,,Reuters,,Netherlands,,Creative body,Civil society
+536,Marine_regions,The New York Times,USA,,,,The New York Times,,USA,,Creative body,Civil society
+537,Mailing_List,personal emailadres,,,,,personal,,,,,
 538,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
-539,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Terrestrial Ecology Unit",Belgium,,,,,,,,,
+539,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Terrestrial Ecology Unit",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department - Terrestrial Ecology Unit (TEREC) ,,Belgium,x,Research institute,Science
 540,Mailing_List,"Research Institute for Agriculture, Fisheries and Food (ILVO)",Belgium,,,,"ILVO Flanders Research Institute for Agriculture, Fisheries and Food",,Belgium,x,Research institute,Science
-541,Mailing_List,personal emailadres,Belgium,,,,,,,,,
+541,Mailing_List,personal emailadres,Belgium,,,,personal,,,,,
 542,Mailing_List,Belspo,Belgium,,,,Federal government - Belgian Science Policy (BELSPO),,Belgium,o,Governmental body,Policy
 543,Mailing_List,Consortium of European Taxonomic Facilities (CETAF),Belgium,,,,CETAF (Consortium of European Taxonomic Facilities),,Europe,,Research network,Science
 544,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 545,Mailing_List,School of Veterinary Medicine,Greece,,,,Aristotle University of Thessaloniki - School of Veterinary Medicine,,Greece,,University,Science
 546,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 547,Mailing_List,Belgian Biodiversity Platform (BBPf),Belgium,,,,Belgian Biodiversity Platform (BBPf),,Belgium,o,Data infrastructure,Science
-548,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,,,,,,
+548,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department - Research Group Marine Biology (MARBIOL),,Belgium,x,Research institute,Science
 549,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 550,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 551,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 552,Mailing_List,Natagora Aves,Belgium,,,,Natagora,,Belgium,o,Non-profit organization,Civil society
 553,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
-554,Mailing_List,personal emailadres,,,,,,,,,,
-555,Mailing_List,"Uliege, TERRA Research centre",Belgium,,,,,,,,,
+554,Mailing_List,personal emailadres,,,,,personal,,,,,
+555,Mailing_List,"Uliege, TERRA Research centre",Belgium,,,,University of Liège - TERRA research centre,,Belgium,,Research institute,Science
 556,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 557,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 558,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-559,Mailing_List,"Uantwerpen, Department of Biology, Behavioural Ecology and Eco-Physiology Group",Belgium,,,,,,,,,
+559,Mailing_List,"Uantwerpen, Department of Biology, Behavioural Ecology and Eco-Physiology Group",Belgium,,,,University of Antwerp - Faculty of Science - Department of Biology - Behavioural Ecology and Ecophysiology (BECO),,Belgium,x,University,Science
 560,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
-561,Mailing_List,personal emailadres,,,,,,,,,,
+561,Mailing_List,personal emailadres,,,,,personal,,,,,
 562,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 563,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 564,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 565,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 566,Mailing_List,European Marine Board (EMB),Belgium,,,,European Marine Board,x,Europe,,NGO,Civil society
-567,Mailing_List,"Université Libre De Bruxelles, Marine Biology Lab",Belgium,,,,,,,,,
-568,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,,,,,,
+567,Mailing_List,"Université Libre De Bruxelles, Marine Biology Lab",Belgium,,,,Free University of Brussels (VUB) - Faculty of Sciences and Bioengineering Sciences - Biology Department - Ecology And Biodiversity Research Group - Marine Biology Laboratory,x,Belgium,o,Research institute,Science
+568,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department - Research Group Marine Biology (MARBIOL),,Belgium,x,Research institute,Science
 569,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 570,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-571,Mailing_List,FWO,Belgium,,,,,,,,,
+571,Mailing_List,FWO,Belgium,,,,Research Foundation – Flanders,,Belgium,x,Governmental body,Policy
 572,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 573,Mailing_List,LifeWatch ERIC,Europe,,,,LifeWatch ERIC,,Europe,,Research network,Science
 574,Mailing_List,LifeWatch ERIC,Europe,,,,LifeWatch ERIC,,Europe,,Research network,Science
 575,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-576,Mailing_List,"Ugent, Falculty of Bioscience Engineering, Department of Animal Sciences and Aquatic Ecology, GhEnToxLab",Belgium,,,,,,,,,
+576,Mailing_List,"Ugent, Falculty of Bioscience Engineering, Department of Animal Sciences and Aquatic Ecology, GhEnToxLab",Belgium,,,,Ghent University - Faculty of Bioscience Engineering - Department of Animal sciences and aquatic ecology - Environmental Toxicology Unit (GhEnToxLab),,,,,
 577,Mailing_List,WWF Belgium,Global,,,,WWF,,Global,,Non-profit organization,Civil society
 578,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 579,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 580,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 581,Mailing_List,School of Veterinary Medicine,Greece,,,,Aristotle University of Thessaloniki - School of Veterinary Medicine,,Greece,,University,Science
-582,Mailing_List,project(!) - De Rijke Noordzee - samen werking tussen Stichting De Noordzee en Natuur En Milieu  - Eline verbonden aan Stichting De Noordzee,The Netherlands,,,,,,,,,
+582,Mailing_List,project(!) - De Rijke Noordzee - samen werking tussen Stichting De Noordzee en Natuur En Milieu  - Eline verbonden aan Stichting De Noordzee,The Netherlands,,,,De Noordzee,,Belgium,x,Non-profit organization,Civil society
 583,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-584,Mailing_List,European Space Agency,Europe,,,,,,,,,
-585,Mailing_List,project(!) - De Rijke Noordzee - samen werking tussen Stichting De Noordzee en Natuur En Milieu,The Netherlands,,,,,,,,,
+584,Mailing_List,European Space Agency,Europe,,,,European Space Agency,,Europe,,Research institute,Science
+585,Mailing_List,project(!) - De Rijke Noordzee - samen werking tussen Stichting De Noordzee en Natuur En Milieu,The Netherlands,,,,Natuur En Milieu,,Belgium,x,Non-profit organization,Civil society
 586,Mailing_List,Vlaamse Instelling voor Technologisch Onderzoek (VITO),Belgium,,,,VITO Vlaamse Instelling voor Technologisch Onderzoek,,Belgium,x,Research institute,Science
 587,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 588,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 589,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
-590,Mailing_List,"KULeuven, Department of Biology, Ecology, Evolution and Biodiversity Conservation Section; Laboratorium voor Biodiversiteit en Evolutionaire Genomica (LBEG)",Belgium,,,,,,,,,
+590,Mailing_List,"KULeuven, Department of Biology, Ecology, Evolution and Biodiversity Conservation Section; Laboratorium voor Biodiversiteit en Evolutionaire Genomica (LBEG)",Belgium,,,,Catholique University of Louvain - Laboratory of Biodiversity and Evolutionary Genomics (LBEG),,Belgium,x,Research institute,Science
 591,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 592,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 593,Mailing_List,Plantentuin Meise,Belgium,,,,Plantentuin Meise,,Belgium,x,Museum,Science
@@ -598,24 +598,24 @@
 596,Mailing_List,"Department of Economy, Science and Innovation",Belgium,,,,"Flemish Government - Department of Economy, Science and Innovation (EWI)",,Belgium,x,Governmental body,Policy
 597,Mailing_List,"Department of Economy, Science and Innovation",Belgium,,,,"Flemish Government - Department of Economy, Science and Innovation (EWI)",,Belgium,x,Governmental body,Policy
 598,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
-599,Mailing_List,"Brazilian Government, Ministry of Agriculture, Livestock and Food supply, Brazilian Agricultural Research Corporation",Brazil,,,,,,,,,
-600,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Terrestrial Ecology Unit",Belgium,,,,,,,,,
+599,Mailing_List,"Brazilian Government, Ministry of Agriculture, Livestock and Food supply, Brazilian Agricultural Research Corporation",Brazil,,,,"Brazilian Government, Ministry of Agriculture, Livestock and Food supply, Brazilian Agricultural Research Corporation",,Brazil,,Governmental body,Policy
+600,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Terrestrial Ecology Unit",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department - Terrestrial Ecology Unit (TEREC) ,,Belgium,x,Research institute,Science
 601,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 602,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-603,Mailing_List,"Swedish University of Agricultural Sciences (SLU), Department of Wildlife, Fish and Environmental Studies",Sweden,,,,,,,,,
+603,Mailing_List,"Swedish University of Agricultural Sciences (SLU), Department of Wildlife, Fish and Environmental Studies",Sweden,,,,Swedish University of Agricultural Sciences (SLU),,Sweden,,University,Science
 604,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 605,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
-606,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Terrestrial Ecology Unit",Belgium,,,,,,,,,
+606,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Terrestrial Ecology Unit",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department - Terrestrial Ecology Unit (TEREC) ,,Belgium,x,Research institute,Science
 607,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 608,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 609,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 610,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 611,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
-612,Mailing_List,"Ugent, Falculty of Bioscience Engineering, Department of Animal Sciences and Aquatic Ecology, GhEnToxLab",Belgium,,,,,,,,,
+612,Mailing_List,"Ugent, Falculty of Bioscience Engineering, Department of Animal Sciences and Aquatic Ecology, GhEnToxLab",Belgium,,,,Ghent University - Faculty of Bioscience Engineering - Department of Animal sciences and aquatic ecology - Environmental Toxicology Unit (GhEnToxLab),,,,,
 613,Mailing_List,EMODnet Secretariat,Europe,,,,EMODnet (European Marine Observation and Data Network) - Secretariat,,Europe,,EU institution,Policy
 614,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-615,Mailing_List,"Ugent, Departement of of Animal Science and Aquatic Ecology, Aquatic Ecology (AECO)",Belgium,,,,,,,,,
-616,Mailing_List,"Ugent, Faculty of Bioscience Engineering, Departement of Data analysis and mathematical modelling",Belgium,,,,,,,,,
+615,Mailing_List,"Ugent, Departement of of Animal Science and Aquatic Ecology, Aquatic Ecology (AECO)",Belgium,,,,Ghent University - Faculty of Bioscience Engineering - Department of Animal Science and Aquatic Ecology,,Belgium,x,University,Science
+616,Mailing_List,"Ugent, Faculty of Bioscience Engineering, Departement of Data analysis and mathematical modelling",Belgium,,,,Ghent University - Faculty of Bioscience Engineering - Department of Data Analysis and Mathematical Modelling - BIOMATH,,Belgium,x,Research institute,Science
 617,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 618,Mailing_List,Fédération Wallonie-Bruxelles,Belgium,,,,Fédération Wallonie-Bruxelles,,Belgium,o,Governmental body,Policy
 619,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
@@ -623,18 +623,18 @@
 621,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 622,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 623,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
-624,Mailing_List,"Wageningen University & Research, Wageningen Marine Research",Netherlands,,,,,,,,,
+624,Mailing_List,"Wageningen University & Research, Wageningen Marine Research",Netherlands,,,,Wageningen University & Research (WUR),,Netherlands,,University,Science
 625,Mailing_List,European Marine Board (EMB),Belgium,,,,European Marine Board,x,Europe,,NGO,Civil society
-626,Mailing_List,"Uhasselt, Faculty of Sciences, Department of Biology and Geology, Researchgroup of Zooloy: Biodiversity and Toxicology, Research Centre for Envronmental Sciences",Belgium,,," Research Centre for Envronmental Sciences""		Belgium",,,,,,
+626,Mailing_List,"Uhasselt, Faculty of Sciences, Department of Biology and Geology, Researchgroup of Zooloy: Biodiversity and Toxicology, Research Centre for Envronmental Sciences",Belgium,,," Research Centre for Envronmental Sciences""		Belgium",Hasselt University - Centre for Environmental Sciences (CMK) - Research Centre for Envronmental Sciences,,,,,
 627,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 628,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 629,Mailing_List,Belgian Biodiversity Platform (BBPf),Belgium,,,,Belgian Biodiversity Platform (BBPf),,Belgium,o,Data infrastructure,Science
 630,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 631,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-632,Mailing_List,personal emailadres,,,,,,,,,,
+632,Mailing_List,personal emailadres,,,,,personal,,,,,
 633,Mailing_List,LifeWatch ERIC,Europe,,,,LifeWatch ERIC,,Europe,,Research network,Science
-634,Mailing_List,"Université Catholique de Louvain, Department of Sciences and Technology, Earth and Life Institute, Environmental Sciences",Belgium,,,,,,,,,
-635,Mailing_List,"Ugent, Falculty of Bioscience Engineering, Department of Animal Sciences and Aquatic Ecology, GhEnToxLab",Belgium,,,,,,,,,
+634,Mailing_List,"Université Catholique de Louvain, Department of Sciences and Technology, Earth and Life Institute, Environmental Sciences",Belgium,,,,Catholique University of Louvain - Earth and Life Institute (ELI),x,Belgium,x,Research institute,Science
+635,Mailing_List,"Ugent, Falculty of Bioscience Engineering, Department of Animal Sciences and Aquatic Ecology, GhEnToxLab",Belgium,,,,Ghent University - Faculty of Bioscience Engineering - Department of Animal sciences and aquatic ecology - Environmental Toxicology Unit (GhEnToxLab),,,,,
 636,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 637,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 638,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
@@ -653,86 +653,86 @@
 651,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 652,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 653,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
-654,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Terrestrial Ecology Unit",Belgium,,,,,,,,,
+654,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Terrestrial Ecology Unit",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department - Terrestrial Ecology Unit (TEREC) ,,Belgium,x,Research institute,Science
 655,Mailing_List,"Ugent, Falculty of Sciences, Departement of Biology, PAE",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department,x,Belgium,x,University,Science
-656,Mailing_List,"Ugent, Faculty of Verterinary Medicine, Department of Virology, parasitology and immunology",Belgium,,,,,,,,,
+656,Mailing_List,"Ugent, Faculty of Verterinary Medicine, Department of Virology, parasitology and immunology",Belgium,,,,"Ghent University - Faculty of Verterinary Medicine - Department of Virology, parasitology and immunology",,,,,
 657,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 658,Mailing_List,AfricaMuseum,Belgium,,,,RMCA Royal Museum for Central Africa,,Belgium,o,Museum,Science
 659,Mailing_List,AfricaMuseum,Belgium,,,,RMCA Royal Museum for Central Africa,,Belgium,o,Museum,Science
 660,Mailing_List,"Uliege, Gembloux Agro-Bio Tech ",Belgium,,,,University of Liège - Gembloux Agro-Bio Tech,x,Belgium,o,Research institute,Science
 661,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 662,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-663,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,,,,,,
-664,Mailing_List,"Uhasselt, Faculty of Sciences, Department of Biology and Geology, Researchgroup of Zooloy: Biodiversity and Toxicology, Research Centre for Envronmental Sciences",Belgium,,," Research Centre for Envronmental Sciences""		Belgium",,,,,,
-665,Mailing_List,"Uantwerpen, Department of Biology, Behavioural Ecology and Eco-Physiology Group",Belgium,,,,,,,,,
-666,Mailing_List,"Université Catholique de Louvain, Department of Sciences and Technology, Earth and Life Institute, Environmental Sciences",Belgium,,,,,,,,,
+663,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department - Research Group Marine Biology (MARBIOL),,Belgium,x,Research institute,Science
+664,Mailing_List,"Uhasselt, Faculty of Sciences, Department of Biology and Geology, Researchgroup of Zooloy: Biodiversity and Toxicology, Research Centre for Envronmental Sciences",Belgium,,," Research Centre for Envronmental Sciences""		Belgium",Hasselt University - Centre for Environmental Sciences (CMK) - Research Centre for Envronmental Sciences,,,,,
+665,Mailing_List,"Uantwerpen, Department of Biology, Behavioural Ecology and Eco-Physiology Group",Belgium,,,,University of Antwerp - Faculty of Science - Department of Biology - Behavioural Ecology and Ecophysiology (BECO),,Belgium,x,University,Science
+666,Mailing_List,"Université Catholique de Louvain, Department of Sciences and Technology, Earth and Life Institute, Environmental Sciences",Belgium,,,,Catholique University of Louvain - Earth and Life Institute (ELI),x,Belgium,x,Research institute,Science
 667,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
-668,Mailing_List,personal emailadres,,,,,,,,,,
+668,Mailing_List,personal emailadres,,,,,personal,,,,,
 669,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 670,Mailing_List,"Department of Economy, Science and Innovation",Belgium,,,,"Flemish Government - Department of Economy, Science and Innovation (EWI)",,Belgium,x,Governmental body,Policy
 671,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 672,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-673,Mailing_List,"Uhasselt, Faculty of Sciences, Department of Biology and Geology, Research group of Environmental Biology, Researh Centre for Environmental Sciences",Belgium,,," Researh Centre for Environmental Sciences""		Belgium",,,,,,
+673,Mailing_List,"Uhasselt, Faculty of Sciences, Department of Biology and Geology, Research group of Environmental Biology, Researh Centre for Environmental Sciences",Belgium,,," Researh Centre for Environmental Sciences""		Belgium",Hasselt University - Centre for Environmental Sciences (CMK),,Belgium,x,Research institute,Science
 674,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 675,Mailing_List,AfricaMuseum,Belgium,,,,RMCA Royal Museum for Central Africa,,Belgium,o,Museum,Science
 676,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 677,Mailing_List,Belgian Biodiversity Platform (BBPf),Belgium,,,,Belgian Biodiversity Platform (BBPf),,Belgium,o,Data infrastructure,Science
 678,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
-679,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,,,,,,
+679,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department - Research Group Marine Biology (MARBIOL),,Belgium,x,Research institute,Science
 680,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
-681,Mailing_List,personal emailadres,Italy,,,,,,,,,
+681,Mailing_List,personal emailadres,Italy,,,,personal,,,,,
 682,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 683,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 684,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 685,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 686,Mailing_List,Natagora,Belgium,,,,Natagora,,Belgium,o,Non-profit organization,Civil society
 687,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
-688,Mailing_List,"Ugent, Departement of of Animal Science and Aquatic Ecology, Aquatic Ecology (AECO)",Belgium,,,,,,,,,
+688,Mailing_List,"Ugent, Departement of of Animal Science and Aquatic Ecology, Aquatic Ecology (AECO)",Belgium,,,,Ghent University - Faculty of Bioscience Engineering - Department of Animal Science and Aquatic Ecology,,Belgium,x,University,Science
 689,Mailing_List,Deltares,Netherlands,,,,Deltares,,Netherlands,,Company,Industry
 690,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 691,Mailing_List,Vlaamse Overheid,Belgium,,,,Flemish Government,,Belgium,x,Governmental body,Policy
 692,Mailing_List,Provincie Ooste-Vlaanderen,Belgium,,,,Province of East-Flanders,,Belgium,x,Other public authorities,Policy
 693,Mailing_List,UNESCO/IOC Project Office for IODE,Belgium,,,,UNESCO - IOC Project Office - IODE (International Oceanographic Data and Information Exchange),,Global,,International programme,Science
-694,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,,,,,,
-695,Mailing_List,"Australia National University, Research School of Earth Sciences",Australia,,,,,,,,,
-696,Mailing_List,personal emailadres,,,,,,,,,,
+694,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department - Research Group Marine Biology (MARBIOL),,Belgium,x,Research institute,Science
+695,Mailing_List,"Australia National University, Research School of Earth Sciences",Australia,,,,Australian National University - Research school of Earth Sciences,,Australia,,University,Science
+696,Mailing_List,personal emailadres,,,,,personal,,,,,
 697,Mailing_List,Vlaamse Instelling voor Technologisch Onderzoek (VITO),Belgium,,,,VITO Vlaamse Instelling voor Technologisch Onderzoek,,Belgium,x,Research institute,Science
 698,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 699,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-700,Mailing_List,personal emailadres,,,,,,,,,,
+700,Mailing_List,personal emailadres,,,,,personal,,,,,
 701,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-702,Mailing_List,personal emailadres,,,,,,,,,,
-703,Mailing_List,personal emailadres,,,,,,,,,,
+702,Mailing_List,personal emailadres,,,,,personal,,,,,
+703,Mailing_List,personal emailadres,,,,,personal,,,,,
 704,Mailing_List,UNESCO/IOC Project Office for IODE,Belgium,,,,UNESCO - IOC Project Office - IODE (International Oceanographic Data and Information Exchange),,Global,,International programme,Science
 705,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 706,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-707,Mailing_List,personal emailadres,,,,,,,,,,
+707,Mailing_List,personal emailadres,,,,,personal,,,,,
 708,Mailing_List,Defensie,Belgium,,,,Defensie,,Belgium,o,Defence,Policy
 709,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 710,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 711,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-712,Mailing_List,"Ugent, Departement of of Animal Science and Aquatic Ecology, Aquatic Ecology (AECO)",Belgium,,,,,,,,,
+712,Mailing_List,"Ugent, Departement of of Animal Science and Aquatic Ecology, Aquatic Ecology (AECO)",Belgium,,,,Ghent University - Faculty of Bioscience Engineering - Department of Animal Science and Aquatic Ecology,,Belgium,x,University,Science
 713,Mailing_List,Federale Overheidsdienst Justitie,Belgium,,,,Federal government - Federal Public Service Justice,,Belgium,o,Governmental body,Policy
 714,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 715,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
-716,Mailing_List,personal emailadres,,,,,,,,,,
-717,Mailing_List,"Uliege, TERRA Research centre",Belgium,,,,,,,,,
-718,Mailing_List,"Uliege, TERRA Research centre",Belgium,,,,,,,,,
-719,Mailing_List,"Université Catholique de Louvain, Department of Sciences and Technology, Earth and Life Institute, Environmental Sciences",Belgium,,,,,,,,,
+716,Mailing_List,personal emailadres,,,,,personal,,,,,
+717,Mailing_List,"Uliege, TERRA Research centre",Belgium,,,,University of Liège - TERRA research centre,,Belgium,,Research institute,Science
+718,Mailing_List,"Uliege, TERRA Research centre",Belgium,,,,University of Liège - TERRA research centre,,Belgium,,Research institute,Science
+719,Mailing_List,"Université Catholique de Louvain, Department of Sciences and Technology, Earth and Life Institute, Environmental Sciences",Belgium,,,,Catholique University of Louvain - Earth and Life Institute (ELI),x,Belgium,x,Research institute,Science
 720,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 721,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-722,Mailing_List,"Uhasselt, Faculty of Sciences, Department of Biology and Geology, Researchgroup of Zooloy: Biodiversity and Toxicology, Research Centre for Envronmental Sciences",Belgium,,," Research Centre for Envronmental Sciences""		Belgium",,,,,,
+722,Mailing_List,"Uhasselt, Faculty of Sciences, Department of Biology and Geology, Researchgroup of Zooloy: Biodiversity and Toxicology, Research Centre for Envronmental Sciences",Belgium,,," Research Centre for Envronmental Sciences""		Belgium",Hasselt University - Centre for Environmental Sciences (CMK) - Research Centre for Envronmental Sciences,,,,,
 723,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
-724,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,,,,,,
+724,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department - Research Group Marine Biology (MARBIOL),,Belgium,x,Research institute,Science
 725,Mailing_List,University of Sheffield,UK,,,,University of Sheffield,,UK,,University,Science
 726,Mailing_List,INBO,Belgium,,,,INBO Research Institute for Nature and Forest,,Belgium,x,Research institute,Science
 727,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
-728,Mailing_List,personal emailadres,,,,,,,,,,
+728,Mailing_List,personal emailadres,,,,,personal,,,,,
 729,Mailing_List,UNESCO/IOC Project Office for IODE,Belgium,,,,UNESCO - IOC Project Office - IODE (International Oceanographic Data and Information Exchange),,Global,,International programme,Science
-730,Mailing_List,"Uantwerpen, Department of Biology, Behavioural Ecology and Eco-Physiology Group",Belgium,,,,,,,,,
+730,Mailing_List,"Uantwerpen, Department of Biology, Behavioural Ecology and Eco-Physiology Group",Belgium,,,,University of Antwerp - Faculty of Science - Department of Biology - Behavioural Ecology and Ecophysiology (BECO),,Belgium,x,University,Science
 731,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
 732,Mailing_List,Institute of Tropical Medicine Antwerp,Belgium,,,,Institute of Tropical Medicine Antwerp,,Belgium,x,Research institute,Science
-733,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,,,,,,
+733,Mailing_List,"Ugent, Faculty of Sciences, Departement of Biology, Marine Biology Research group",Belgium,,,,Ghent University - Faculty of Sciences - Biology Department - Research Group Marine Biology (MARBIOL),,Belgium,x,Research institute,Science
 734,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 735,Mailing_List,Royal Belgian Institute of Natural Sciences (RBINS),Belgium,,,,RBINS Royal Belgian Institute of Natural Sciences (RBINS),,,,,
 736,Mailing_List,VLIZ,Belgium,,,,VLIZ Flanders Marine Institute,,Belgium,x,Research institute,Science
